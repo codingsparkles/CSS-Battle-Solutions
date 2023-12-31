@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<title>Play CSS - 28th Dec, 2023</title>
+	<style>
+		body {
+			display: grid;
+			place-items: center;
+			min-height: 97vh;
+			background: linear-gradient(skyblue, rgb(143, 246, 249));
+		}
+
+		.container {
+			height: 300px;
+			width: 400px;
+			background: #a49FBB;
+		}
+
+		p {
+			position: relative;
+			height: 100px;
+			width: 210px;
+			-webkit-box-reflect: below 70px;
+		}
+
+		i {
+			margin: 20px 90px;
+			position: absolute;
+			background: #291D61;
+			height: 100%;
+			width: 100%;
+			clip-path: polygon(30.5% 67%, 50% 0%, 69.5% 67%, 100% 67%,
+					100% 100%, 0% 100%, 0% 67%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<p>
+			<i></i>
+		</p>
+	</div>
+</body>
+
+</html>

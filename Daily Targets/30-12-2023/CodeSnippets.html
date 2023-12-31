@@ -1,0 +1,70 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p></p><i></i>
+<style>
+	* {
+		background: #A49FBB;
+		position: fixed
+	}
+
+	p {
+		height: 210;
+		width: 175;
+		background: #291D61;
+		clip-path: polygon(50%0%, 100%50%, 50%100%, 0%50%);
+		margin: 37 104
+	}
+
+	i {
+		border: solid#291D61;
+		border-width: 30 0;
+		height: 30;
+		width: 260;
+		margin: 97 62
+	}
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+	* {
+		background: #A49FBB;
+		position: fixed
+	}
+
+	body {
+		border: solid#A49FBB;
+		border-bottom-color: #291D61;
+		border-width: 0 50 60;
+		margin: 45 150;
+		-webkit-box-reflect: below 90px
+	}
+
+	p {
+		height: 30;
+		width: 260;
+		background: #291D61;
+		margin: 60-130
+	}
+</style>
+
+<!-- Method 3 - Less Characters -->
+<p></p>
+<style>
+	* {
+		background: #A49FBB
+	}
+
+	body {
+		margin: 45 70 165;
+		-webkit-box-reflect: below 32q
+	}
+
+	p {
+		height: 100%;
+		width: 100%;
+		background: #291D61;
+		clip-path: polygon(30.5%67%, 50%0, 69.5%67%, 100%67%, 100%100%, 0%100%, 0%67%)
+	}
