@@ -1,0 +1,61 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1  -->
+<p></p>
+<style>
+	* {
+		background: #AEA530
+	}
+
+	body,
+	p {
+		border: solid;
+		border-width: 0 75 100
+	}
+
+	body {
+		border-color: #FFF9AE#FFF9AE#AEA530#FFF9AE;
+		margin: 50 125
+	}
+
+	p {
+		border-color: #AEA530#AEA530#FFF9AE#AEA530;
+		margin: 0 -75
+	}
+</style>
+
+<!-- Method 2  -->
+<p>
+<p a></p>
+<style>
+	* {
+		background: #AEA530
+	}
+
+	p {
+		height: 100;
+		width: 75;
+		background: #FFF9AE;
+		transform: skewY(-53deg);
+		margin: 100 200 102 117
+	}
+
+	[a] {
+		scale: -1+1;
+		margin: -202 192
+	}
+</style>
+
+
+<!-- Method 3 -->
+<style>
+	* {
+		background: #AEA530
+	}
+
+	body {
+		background: #FFF9AE;
+		margin: 50 125;
+		clip-path: polygon(100%50%, 100%100%, 50%50%, 0%100%, 0%50%, 50%0)
+	}
+</style>
