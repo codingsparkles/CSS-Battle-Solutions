@@ -1,0 +1,40 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1  -->
+<style>
+	* {
+		background: radial-gradient(circle at 50% 58.3%, #92278F 40px, #FFF579 0 60px, #92278F 0);
+
+		+* {
+			border: 22q solid#FFF579;
+			margin: 65;
+			border-radius: 64q;
+			background: #0000
+		}
+	}
+</style>
+
+<!-- Method 2  -->
+<p></p>
+<style>
+	* {
+		>* {
+			border: 22q solid#FFF579;
+		}
+
+		background:#92278F
+	}
+
+	body {
+		margin: 65;
+		border-radius: 64q
+	}
+
+	p {
+		height: 80;
+		width: 80;
+		border-radius: 50%;
+		position: fixed;
+		margin: 30 55
+	}
+</style>
