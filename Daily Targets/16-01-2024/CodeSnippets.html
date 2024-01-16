@@ -1,0 +1,81 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+<p>
+<p a></p>
+<style>
+	* {
+		background: #002A6B
+	}
+
+	body {
+		border: solid;
+		border-width: 0 90 90;
+		border-color: #5CC4F4 #0000;
+		margin: 0 80 135
+	}
+
+	p {
+		border: solid;
+		border-width: 0 60 60;
+		border-color: #0000 #C7E7FB;
+		position: fixed;
+		margin: 165 -30
+	}
+
+	[a] {
+		border-width: 90 90 0;
+		border-color: #C7E7FB #0000;
+		margin: 75-60;
+		background-clip: content-box
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+	* {
+		background: linear-gradient(#C7E7FB, #C7E7FB)center/120px 150px no-repeat #002A6B
+	}
+
+	body {
+		border: 90px solid;
+		border-color: #C7E7FB#0000#002A6B#0000;
+		margin: 75 110
+	}
+
+	p {
+		border: 60px solid;
+		border-color: #0000#0000#5CC4F4;
+		position: fixed;
+		margin: -120;
+		background-clip: content-box;
+		-webkit-box-reflect: right
+	}
+</style>
+
+<!-- Method 3 - 99.9% -->
+
+<p></p>
+<style>
+	* {
+		background: #002A6B
+	}
+
+	body {
+		border: 60px solid;
+		border-color: #0000#0000#5CC4F4;
+		margin: 45 200 140;
+		box-shadow: -30px 90px 0-30px#C7E7FB;
+		-webkit-box-reflect: left
+	}
+
+	p {
+		border: 90px solid;
+		position: fixed;
+		border-color: #C7E7FB#0000#002A6B;
+		margin: -30-150;
+		background-clip: content-box
+	}
+</style>
