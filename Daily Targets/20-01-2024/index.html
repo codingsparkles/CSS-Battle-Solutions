@@ -4,7 +4,7 @@
 <head>
 	<meta charset='utf-8'>
 	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<title>CSS Battle Daily Targets Solution - 18th Jan, 2024</title>
+	<title>CSS Battle Daily Targets Solution - 20th Jan, 2024</title>
 	<style>
 		body {
 			display: grid;
@@ -16,46 +16,48 @@
 		.container {
 			height: 300px;
 			width: 400px;
-			background: #F7BED9;
+			background: #602820;
 			position: relative;
 		}
-
-		.container>*,
-		p {
-			border-radius: 11q;
+		.container > *{
+			position: absolute;
 		}
-
 		.parent {
 			height: 180px;
-			background: #8B0051;
-			margin: 60px 250px 60px 130px 
+			width: 150px;
+			background: #FAC2A8;
+			margin: 70px 125px;
+			border-radius: 79q 79q 21q 21q;
+			z-index: 1
 		}
 
 		p,
-		i {
-			position: fixed;
-			height: 60px;
-			width: 90px
+		a {
+			height: 50px;
+			width: 80px;
+			border-radius: 16q;
+			background: #F16B4A
 		}
 
 		p {
-			background: #EC0076;
-			margin: 38px 50px;
+			margin: 150px 160px;
+			z-index: 2;
 		}
 
-		i {
-			background: #F069AB;
-			margin: -20px -30px;
-			border-radius: 0 10q 10q 0
+		a {
+			width: 180px;
+			margin: 150px 110px;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="container">
+		<a></a>
 		<div class="parent">
-			<p><i></i></p>
 		</div>
+		<p>
+		</p>
 	</div>
 </body>
 
