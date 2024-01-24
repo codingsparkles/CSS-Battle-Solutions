@@ -1,0 +1,83 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p><a><b>
+			<c></c>
+		</b></a></p>
+<style>
+	* {
+		background: #9F002F;
+
+		>* {
+			position: fixed
+		}
+	}
+
+	p {
+		border: solid#0000;
+		border-width: 80 100;
+		border-right-color: #ED3B9A;
+		margin: 62 -33
+	}
+
+	a {
+		border: solid#0000;
+		border-right-color: #F7BED9;
+		margin: -40 150;
+		border-width: 40 50
+	}
+
+	b {
+		height: 10;
+		width: 110;
+		background: #F7BED9;
+		margin: -5-100
+	}
+
+	c {
+		border-radius: 50%;
+		height: 40;
+		width: 40;
+		margin: -15-60;
+		background: #F7BED9
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+	* {
+		background: #9F002F
+	}
+
+	body {
+		background: linear-gradient(90deg, #ED3B9A 40%, #F7BED9 0);
+		margin: 70 75;
+		clip-path: polygon(40%0, 40%47%, 82%47%, 100%25%, 100%75%, 82%53%, 40%53%, 40%100%, 0%50%);
+	}
+
+	p {
+		width: 40;
+		height: 40;
+		background: #F7BED9;
+		border-radius: 50%;
+		margin: 60 40;
+		position: fixed
+	}
+</style>
+
+<!-- Method 3 -->
+
+<style>
+	* {
+		background: #9F002F;
+
+		+* {
+			background: radial-gradient(circle at 24%50%, #F7BED9 20px, #0000 0), linear-gradient(90deg, #ED3B9A 40%, #F7BED9 0);
+			margin: 70 75;
+			clip-path: polygon(40%0, 40%47%, 82%47%, 100%25%, 100%75%, 82%53%, 40%53%, 40%100%, 0%50%)
+		}
+	}
+</style>
