@@ -1,0 +1,71 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p></p>
+<style>
+	* {
+		background: #999943
+	}
+
+	body {
+		border-radius: 99px 99px 0 0;
+		margin: 60 100 140;
+		background: #F0ED38
+	}
+
+	p {
+		position: fixed;
+		border: solid#F0ED38;
+		border-width: 20 0;
+		width: 200;
+		height: 20;
+		margin: 120 0
+	}
+</style>
+
+<!-- Method 2 -->
+
+<style>
+	* {
+		background: #999943
+	}
+
+	body {
+		border-radius: 99px 99px 0 0;
+		margin: 60 100 120;
+		background: linear-gradient(#F0ED38 100px, #999943 0);
+		color: #F0ED38;
+		box-shadow: 0 20px, 0 40px#999943, 0 60px
+	}
+</style>
+
+<!-- Method 3 -->
+
+<style>
+	* {
+		background: radial-gradient(circle at 50%53.3%, #F0ED38 100px, #999943 0);
+
+		+* {
+			color: #999943;
+			border: solid;
+			border-width: 20 0;
+			margin: 160 100 80;
+			box-shadow: 0 20px#F0ED38, 0 50px
+		}
+	}
+</style>
+
+<!-- Method 4 -->
+
+<style>
+	* {
+		background: #999943
+	}
+
+	body {
+		background: linear-gradient(#F0ED38 100px, #999943 0 120px, #F0ED38 0 140px, #999943 0 160px, #F0ED38 0);
+		border-radius: 99px 99px 0 0;
+		margin: 60 100
+	}
+</style>
