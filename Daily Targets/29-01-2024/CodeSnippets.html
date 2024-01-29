@@ -1,0 +1,82 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p>
+<p a></p>
+<style>
+	* {
+		background: #6A1368
+	}
+
+	body {
+		background: linear-gradient(#A94EA4 50%, #F7BED9 0);
+		margin: 60;
+		border-radius: 20px
+	}
+
+	p {
+		border: solid;
+		border-width: 60 50 0;
+		border-color: #A94EA4#F7BED9;
+		margin: 90 40;
+		position: fixed
+	}
+
+	[a] {
+		scale: -1;
+		margin: 30 140;
+		border-color: #F7BED9#A94EA4;
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+	* {
+		background: #6A1368;
+
+		+* {
+			background: linear-gradient(#A94EA4 50%, #F7BED9 0);
+			margin: 60;
+			border-radius: 21q
+		}
+	}
+
+	p {
+		background: linear-gradient(#F7BED9 50%, #A94EA4 0);
+		height: 120;
+		width: 200;
+		margin: 30 40;
+		position: fixed;
+		clip-path: polygon(0%50%, 25%100%, 75%0, 100%50%)
+	}
+</style>
+
+<!-- Method 2 optimized -->
+
+<p></p>
+<style>
+	* {
+		background: #6A1368;
+
+		>* {
+			background: linear-gradient(#A94EA4 50%, #F7BED9 0)
+		}
+
+		+* {
+			margin: 60;
+			border-radius: 21q
+		}
+	}
+
+	p {
+		scale: -1;
+		height: 120;
+		width: 200;
+		margin: 30 40;
+		position: fixed;
+		clip-path: polygon(0%50%, 25%100%, 75%0, 100%50%)
+	}
+</style>
