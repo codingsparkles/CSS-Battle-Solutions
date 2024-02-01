@@ -1,0 +1,62 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p></p>
+<style>
+	* {
+		background: #D5EDFC;
+
+		+* {
+			border: solid#06487A;
+			border-width: 40 0;
+			margin: 60
+		}
+
+		p {
+			height: 100;
+			width: 40;
+			background: #06487A;
+			margin: 0 120;
+			box-shadow: 80px 0#06487A, -80px 0#06487A
+		}
+	}
+</style>
+
+<!-- Method 2 -->
+<style>
+	* {
+		background: #D5EDFC
+	}
+
+	body {
+		border: solid#06487A;
+		border-width: 40 0;
+		margin: 60;
+		background: repeating-linear-gradient(90deg, #D5EDFC 0 40px, #06487A 0 80px)
+	}
+</style>
+
+<!-- Method 3 -->
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<style>
+	* {
+		background: #D5EDFC
+	}
+
+	body {
+		background: #06487A;
+		margin: 60;
+		display: flex;
+		gap: 40px
+	}
+
+	p {
+		height: 100;
+		width: 40;
+		margin: 40 0
+	}
+</style>
