@@ -1,0 +1,131 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p></p>
+<style>
+	* {
+		background: #FAD3E5
+	}
+
+	body {
+		border: solid #AD2056;
+		border-width: 60 0;
+		margin: 70 90
+	}
+
+	p {
+		width: 40;
+		height: 40;
+		border-radius: 50%;
+		position: fixed;
+		margin: -50 10;
+		color: #FAD3E5;
+		box-shadow: 0 106q, 169q 0, 169q 106q
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+	* {
+		background: #FAD3E5
+	}
+
+	body {
+		border: solid #AD2056;
+		border-width: 60 0;
+		margin: 70 90
+	}
+
+	p {
+		width: 40;
+		height: 60;
+		position: fixed;
+		border: dotted #FAD3E5;
+		background: #0000;
+		margin: -50 10;
+		border-width: 40 0;
+		-webkit-box-reflect: right 120px
+	}
+</style>
+
+<!-- Method 3 -->
+
+<style>
+	* {
+		background: linear-gradient(#AD2056 60px, #FAD3E5 0 100px, #AD2056 0 130px)center/220px 160px no-repeat #FAD3E5
+	}
+
+	body {
+		border: dotted#FAD3E5;
+		border-width: 40 0;
+		margin: 80 230 80 100;
+		-webkit-box-reflect: right 63q
+	}
+</style>
+
+<!-- Method 4 -->
+
+<style>
+	* {
+		background: linear-gradient(#AD2056 60px, #FAD3E5 0 100px, #AD2056 0 130px)center/220px 160px no-repeat #FAD3E5;
+
+		+* {
+			color: #FAD3E5;
+			border-radius: 50%;
+			margin: 80 260 180 100;
+			box-shadow: 0 106q, 169q 0, 169q 106q
+		}
+	}
+</style>
+
+<!-- Method 5 -->
+
+<p></p>
+<p></p>
+<style>
+	* {
+		background: #FAD3E5
+	}
+
+	body {
+		background: #AD2056;
+		margin: 70 90 170;
+		display: flex;
+		justify-content: space-between;
+		padding: 10;
+		-webkit-box-reflect: below 42q
+	}
+
+	p {
+		height: 40;
+		width: 40;
+		border-radius: 50%;
+		margin: 0
+	}
+</style>
+
+<!-- Method 6 -->
+
+<p></p>
+<style>
+	* {
+		background: #FAD3E5
+	}
+
+	body {
+		background: #AD2056;
+		margin: 70 90 170;
+		padding: 10;
+		-webkit-box-reflect: below 42q
+	}
+
+	p {
+		height: 40;
+		width: 40;
+		border-radius: 50%;
+		box-shadow: 169q 0#FAD3E5
+	}
+</style>
