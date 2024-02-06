@@ -1,0 +1,62 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+<p>
+<p a></p>
+<style>
+	* {
+		background: #5C507C
+	}
+
+	p {
+		height: 120;
+		width: 40;
+		margin: 70 152;
+		background: #C7BFE1;
+		color: #C7BFE1;
+		box-shadow: 40px 40px
+	}
+
+	[a] {
+		rotate: 90deg;
+		height: 180;
+		margin: -220 222;
+		box-shadow: 40px 100px
+	}
+</style>
+
+<!-- Method 2 -->
+
+<style>
+	* {
+		background: #5C507C;
+
+		+* {
+			background: #C7BFE1;
+			margin: 70 60;
+			clip-path: polygon(35.7%50%, 35.7%0, 50%0, 50%25%, 100%25%, 100%50%, 64.3%50%, 64.3%100%, 50%100%, 50%75%, 0%75%, 0%50%)
+		}
+	}
+</style>
+
+<!-- Method 3 -->
+<p>
+<p a></p>
+<style>
+	* {
+		background: #5C507C
+	}
+
+	p {
+		border: solid#C7BFE1;
+		border-width: 0 40 40 0;
+		height: 80;
+		width: 100;
+		margin: 70 52
+	}
+
+	[a] {
+		scale: -1;
+		margin: -150 192
+	}
+</style>
