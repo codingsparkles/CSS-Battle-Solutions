@@ -1,0 +1,61 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p>
+<p a></p>
+<style>
+	* {
+		background: #680039;
+		margin: 0
+	}
+
+	p {
+		height: 60;
+		width: 60;
+		border: solid#F28BBB;
+		border-width: 0 170px;
+		margin: 60 0
+	}
+
+	[a] {
+		border-width: 0 60px;
+		margin-left: 110
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+	* {
+		background: #680039;
+
+		+* {
+			border: solid#F28BBB;
+			border-width: 60 0;
+			margin: 60 230 60 0;
+			-webkit-box-reflect: right 60px
+		}
+	}
+
+	p {
+		width: 110;
+		height: 105;
+		position: fixed
+	}
+</style>
+
+<!-- Method 3 -->
+<style>
+	* {
+		background: #680039;
+
+		+* {
+			background: #F28BBB;
+			margin: 60 230 180 0;
+			box-shadow: -15vw 30vw#680039, 0 30vw#F28BBB;
+			-webkit-box-reflect: right 15vw
+		}
+	}
+</style>
