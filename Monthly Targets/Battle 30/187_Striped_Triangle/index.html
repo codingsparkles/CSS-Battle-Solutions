@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Solution - Battle #30 - #187 Striped Triangle</title>
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 96vh;
+      background: linear-gradient(skyblue, rgb(143, 246, 249));
+    }
+
+    .container {
+      height: 300px;
+      width: 400px;
+      background: #40234B;
+      position: relative;
+    }
+
+    p {
+      height: 200px;
+      width: 230px;
+      margin: 50px 85px;
+      clip-path: polygon(0%0, 100%0, 50%100%);
+      background: linear-gradient(120deg, #A94EA4 0 16q, #40234B 0 26q, #A94EA4 0 43q, #40234B 0 54q, #A94EA4 0 70q, #40234B 0 81q, #A94EA4 0 98q, #40234B 0 109q, #A94EA4 0 126q, #40234B 0 136q, #A94EA4 0 153q, #40234B 0 164q, #A94EA4 0 180q, #40234B 0 191q, #A94EA4 0);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p></p>
+  </div>
+</body>
+
+</html>
