@@ -1,0 +1,70 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+<p></p>
+<style>
+  * {
+    background: linear-gradient(#fff, #fff)center/180px 180px no-repeat#024817
+  }
+
+  body {
+    border: solid#024817;
+    border-width: 0 30;
+    margin: 90 140 150 170
+  }
+
+  p {
+    height: 30;
+    width: 120;
+    background: #024817;
+    margin: 90-60;
+    position: fixed
+  }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+  * {
+    background: #024817
+  }
+
+  body {
+    border: solid#fff;
+    border-width: 120 30 30;
+    margin: 60 110
+  }
+
+  p {
+    width: 30;
+    height: 60;
+    position: fixed;
+    border: solid#024817;
+    border-width: 0 30;
+    margin: -90 30;
+    background: #fff
+  }
+</style>
+
+<!-- Method 3 -->
+
+<p></p>
+<style>
+  * {
+    background: #024817;
+
+    +* {
+      border: solid#fff;
+      border-width: 120 30 30;
+      margin: 60 110
+    }
+  }
+
+  p {
+    width: 30;
+    height: 60;
+    position: fixed;
+    margin: -90 30;
+    box-shadow: 60px 0#024817
+  }
+</style>
