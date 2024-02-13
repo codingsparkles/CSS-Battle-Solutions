@@ -1,0 +1,55 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+<p>
+<p a></p>
+<style>
+  * {
+    background: #4A1818
+  }
+
+  body {
+    margin: 60 160 160;
+    background: #C31C1D;
+    border-radius: 50%;
+    box-shadow: 74q 106q#C31C1D, -74q 106q#C31C1D
+  }
+
+  p {
+    position: fixed;
+    width: 120;
+    height: 20;
+    background: #C31C1D;
+    margin: 130 -20;
+  }
+
+  [a] {
+    rotate: 90deg;
+    width: 200;
+    margin: 150 -60
+  }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+  * {
+    background: #4A1818;
+    color: #C31C1D;
+
+    +* {
+      margin: 90 210 140 130;
+      box-shadow: 0 21q, 21q 0, 96q 170q 0 11q#4A1818, 74q 140px 0 11q
+    }
+  }
+
+  p {
+    width: 80;
+    height: 80;
+    background: #C31C1D;
+    border-radius: 50%;
+    margin: -30 30;
+    box-shadow: 74q 106q, -74q 106q
+  }
+</style>
