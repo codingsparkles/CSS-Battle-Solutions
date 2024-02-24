@@ -1,0 +1,110 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p>
+<p a>
+<p b></p>
+<style>
+	* {
+		background: #9ED7F8;
+		color: #fff
+	}
+
+	body,
+	p {
+		background: #277292
+	}
+
+	body {
+		margin: 90+50;
+		padding: 15
+	}
+
+	body,
+	[a],
+	[b] {
+		border-radius: 22q
+	}
+
+	p {
+		width: 120;
+		height: 15;
+		border: 22q dotted;
+		margin: 0 55;
+		position: fixed
+	}
+
+	[a],
+	[b] {
+		background: #fff;
+		border: none;
+		height: 20
+	}
+
+	[a] {
+		width: 160;
+		margin: 70 55
+	}
+
+	[b] {
+		width: 40;
+		margin: 0;
+		box-shadow: 0 37q, 0 74q;
+		-webkit-box-reflect: right 201q
+	}
+</style>
+
+<!-- Method 2 -->
+
+<a></a><b></b>
+<c></c>
+<style>
+	* {
+		background: #9ED7F8;
+		color: #fff;
+
+		>* {
+			background: #fff;
+			border-radius: 22q
+		}
+	}
+
+	body,
+	a {
+		background: #277292
+	}
+
+	body {
+		margin: 90+50;
+		padding: 15;
+
+		>* {
+			width: 120;
+			height: 15;
+			position: fixed
+		}
+	}
+
+	a {
+		border: 22q dotted;
+		margin: 0 55;
+		border-radius: 0
+	}
+
+	b,
+	c {
+		height: 20
+	}
+
+	b {
+		width: 160;
+		margin: 70 55
+	}
+
+	c {
+		width: 40;
+		box-shadow: 0 37q, 0 74q;
+		-webkit-box-reflect: right 201q
+	}
+</style>
