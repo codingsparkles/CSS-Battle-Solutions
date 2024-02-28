@@ -1,0 +1,67 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p>
+<p a></p><i></i>
+<style>
+	* {
+		>* {
+			color: #0C6DA2;
+			position: fixed
+		}
+
+		background:#ACDDF9
+	}
+
+	p,
+	i {
+		border: solid
+	}
+
+	p {
+		height: 230;
+		width: 160;
+		border-width: 0 20 20 0;
+		background: #0C6DA2;
+		margin: -8;
+		box-shadow: inset -20px -20px 0 0#ACDDF9
+	}
+
+	[a] {
+		scale: -1;
+		margin: 42 212
+	}
+
+	i {
+		border-width: 20 0;
+		height: 40;
+		width: 80;
+		margin: 102 152
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+	* {
+		background: #ACDDF9;
+
+		+* {
+			background: #0C6DA2;
+			color: #0C6DA2;
+			margin: 0 260 90 0;
+			box-shadow: 0 0 0 20px#ACDDF9, 0 0 0 40px, 260px 90px, 260px 90px 0 20px#ACDDF9, 260px 90px 0 40px
+		}
+	}
+
+	p {
+		border: solid;
+		border-width: 20 0;
+		height: 40;
+		width: 80;
+		margin: 110 160;
+		position: fixed
+	}
+</style>
