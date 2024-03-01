@@ -1,0 +1,63 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p>
+<p a>
+<p b>
+<p c></p>
+<c></c>
+<style>
+	* {
+		background: #fff;
+		margin: 0
+	}
+
+	p {
+		height: 150;
+		width: 200;
+		background: #2BBBF3;
+		position: fixed;
+		clip-path: polygon(83.3%0%, 100%100%, 0%70%, 0%0%);
+	}
+
+	[a] {
+		scale: -1+1;
+		right: 0
+	}
+
+	[b] {
+		scale: -1;
+		bottom: 0;
+		right: 0
+	}
+
+	[c] {
+		scale: 1-1;
+		bottom: 0;
+		left: 0
+	}
+
+	c {
+		height: 100;
+		width: 100;
+		background: #fff;
+		position: fixed;
+		border-radius: 50%;
+		margin: 100 150
+	}
+</style>
+
+<!-- Method 2 -->
+
+<style>
+	* {
+		background: repeating-conic-gradient(#fff 0 12.5deg, #2BBBF3 0 77.5deg, #fff 0 90deg);
+
+		+* {
+			margin: 100 150;
+			background: #fff;
+			border-radius: 50%
+		}
+	}
+</style>
