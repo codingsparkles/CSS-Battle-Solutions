@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Solution - Battle #30 - #193 Galver</title>
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 96vh;
+      background: radial-gradient(#FCDDEB, #8B0051);
+    }
+
+    .container {
+      height: 300px;
+      width: 400px;
+      background: #FCDDEB;
+      color: #8B0051;
+      position: relative;
+
+    }
+
+    .parent,
+    i {
+      border-radius: 50%
+    }
+
+    .parent {
+      height: 130px;
+      width: 130px;
+      border: 16q solid;
+      margin: 70px 120px;
+    }
+
+    .parent * {
+      position: absolute;
+      background: #8B0051
+    }
+
+    p {
+      padding: 100px 15px;
+      margin: -35px 50px;
+      clip-path: polygon(100%0, 50%50%, 100%100%, 0%100%, 50%50%, 0%0)
+    }
+
+    [a] {
+      rotate: 90deg
+    }
+
+    i {
+      padding: 20px;
+      margin: 45px;
+      box-shadow: 0 0 0 16q#F180B6, 0 0 0 32q, 0 106q 0-5q, 0 -106q 0-5q, 106q 0 0-5q, -106q 0 0-5q
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="parent">
+      <p>
+      <p a></p>
+      <i></i>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p>
+<p a></p><i></i>
+<style>
+  * {
+    background: radial-gradient(circle, #8B0051 50px, #FCDDEB 0 65px, #8B0051 0 80px, #FCDDEB 0);
+
+    >* {
+      position: fixed
+    }
+  }
+
+  p {
+    width: 30;
+    height: 200;
+    background: #8B0051;
+    margin: 40 177;
+    clip-path: polygon(100%0%, 50%50%, 100%100%, 0%100%, 50%50%, 0%0%)
+  }
+
+  [a] {
+    rotate: 90deg;
+    margin: 42 177
+  }
+
+  i {
+    height: 40;
+    width: 40;
+    border-radius: 50%;
+    margin: 122 172;
+    color: #8B0051;
+    box-shadow: 0 0 0 15px#F180B6, 0 100px 0 -5px, 0 -100px 0 -5px, 100px 0 0 -5px, -100px 0 0 -5px
+  }
+</style>
+
+<!-- Method 2 -->
+
+<p>
+<p a></p><i></i>
+<style>
+  * {
+    >* {
+      background: #8B0051
+    }
+
+    background:#FCDDEB
+  }
+
+  body {
+    margin: 100 150;
+    color: #8B0051;
+    box-shadow: 0 0 0 15px#FCDDEB, 0 0 0 30px, 0 100px 0 -35px, 0 -100px 0 -35px, -100px 0 0 -35px, 100px 0 0 -35px
+  }
+
+  body,
+  i {
+    border-radius: 50%
+  }
+
+  p,
+  i {
+    position: fixed
+  }
+
+  p {
+    width: 30;
+    height: 200;
+    margin: -50 35;
+    clip-path: polygon(100%0%, 50%50%, 100%100%, 0%100%, 50%50%, 0%0%)
+  }
+
+  [a] {
+    rotate: 90deg;
+    margin: -50 35
+  }
+
+  i {
+    height: 40;
+    width: 40;
+    border: 15px solid#F180B6;
+    margin: 15
+  }
+</style>
+
+<!-- Method 3 -->
+
+<p>
+<p a></p><i></i>
+<style>
+  * {
+    background: #FCDDEB;
+    color: #8B0051
+  }
+
+  body,
+  i {
+    border-radius: 50%
+  }
+
+  body {
+    border: 16q solid;
+    margin: 70 120;
+
+    >* {
+      position: fixed;
+      background: #8B0051
+    }
+  }
+
+  p {
+    padding: 100 15;
+    margin: -35 50;
+    clip-path: polygon(100%0, 50%50%, 100%100%, 0%100%, 50%50%, 0%0)
+  }
+
+  [a] {
+    rotate: 90deg
+  }
+
+  i {
+    padding: 20;
+    margin: 45;
+    box-shadow: 0 0 0 16q#F180B6, 0 0 0 32q, 0 106q 0-5q, 0 -106q 0-5q, 106q 0 0-5q, -106q 0 0-5q
+  }
+</style>
