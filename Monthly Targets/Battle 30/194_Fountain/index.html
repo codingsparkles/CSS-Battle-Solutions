@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Solution - Battle #30 - #194 Fountain</title>
+  <style>
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 96vh;
+      background: radial-gradient(#4FA07B,#0D1335);
+    }
+
+    .container {
+      height: 300px;
+      width: 400px;
+      background: #4FA07B;
+      color: #4FA07B;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container * {
+      position: absolute;
+    }
+
+    a,
+    b {
+      width: 20px;
+      height: 160px;
+      background: #4FA07B;
+      border-radius: 53q;
+      border: 22q solid#0D1335;
+      box-shadow: 0 0 0 21q, 0 0 0 40px#0D1335
+    }
+
+    a {
+      margin: 52px 162px
+    }
+
+    b {
+      margin: 152px 102px;
+      -webkit-box-reflect: right 60px
+    }
+
+    i {
+      background: #4FA07B;
+      padding: 10px 80px;
+      margin: 108px 100px;
+      box-shadow: 22q -20q, 75q -42q 0 3q;
+      -webkit-box-reflect: left 63q
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <a></a><b><i></i></b>
+  </div>
+</body>
+
+</html>
