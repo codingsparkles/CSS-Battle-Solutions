@@ -1,0 +1,73 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p></p>
+<style>
+	* {
+		background: #5F0032;
+		color: #D9D9D9;
+
+		+* {
+			border: solid;
+			border-width: 0 40 40 0;
+			margin: 50 100 130;
+			box-shadow: -212q 42q#5F0032, -169q 85q, 106q 42q#5F0032, 169q 0
+		}
+
+		p {
+			padding: 20;
+			box-shadow: 0 42q, 85q 42q, 85q 212q, 169q 212q;
+			margin: -40 0;
+			position: fixed
+		}
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p>
+<p a></p>
+<style>
+	* {
+		background: #5F0032;
+		color: #D9D9D9
+	}
+
+	p {
+		padding: 20;
+		border-block: 43q solid;
+		writing-mode: vertical-rl;
+		margin: 50 92;
+		box-shadow: 21q 21q 0 21q#5F0032, 43q 42q 0 42q, 191q 0
+	}
+
+	[a] {
+		scale: -1;
+		margin: 120 172
+	}
+</style>
+
+<!-- Method 3 -->
+
+<p>
+<p a></p>
+<style>
+	* {
+		background: #5F0032;
+		color: #D9D9D9
+	}
+
+	p {
+		padding: 20;
+		border: solid;
+		border-width: 0 40;
+		margin: 50 190 50 92;
+		box-shadow: 21q 21q 0 21q#5F0032, 43q 42q 0 42q, 191q 0
+	}
+
+	[a] {
+		scale: -1;
+		margin: 120 172
+	}
+</style>
