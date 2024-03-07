@@ -1,0 +1,97 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p>
+<p a></p>
+<style>
+	body {
+		background: linear-gradient(#8B0051, #8B0051)50% 106q/150px 150px no-repeat#F28BBB;
+	}
+
+	p {
+		width: 180;
+		height: 80;
+		background: #8B0051;
+		border-radius: 90px;
+		margin: 135 67;
+		box-shadow: 70px 0#8B0051
+	}
+
+	[a] {
+		rotate: 90deg;
+		margin: -100 102;
+		background: #F28BBB;
+		box-shadow: -150px 0#8B0051
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p>
+<p a></p>
+<style>
+	* {
+		>* {
+			background: #8B0051
+		}
+
+		background:#F28BBB;
+
+		+* {
+			margin: 100 125 50
+		}
+	}
+
+	p {
+		position: fixed;
+		width: 180;
+		height: 80;
+		border-radius: 85q;
+		margin: 35-50;
+		color: #8B0051;
+		box-shadow: 74q 0
+	}
+
+	[a] {
+		rotate: 90deg;
+		margin: 150-15;
+		background: #F28BBB;
+		box-shadow: -159q 0
+	}
+</style>
+
+<!-- Method 3 -->
+
+<p>
+<p a></p>
+<style>
+	*,
+	[a] {
+		background: #F28BBB
+	}
+
+	* {
+		>* {
+			background: #8B0051
+		}
+
+		+* {
+			margin: 100 125 50
+		}
+	}
+
+	p {
+		position: fixed;
+		width: 250;
+		height: 80;
+		border-radius: 85q;
+		margin: 35-50
+	}
+
+	[a] {
+		rotate: 90deg;
+		margin: 185-50;
+		box-shadow: -159q 0#8B0051
+	}
+</style>
