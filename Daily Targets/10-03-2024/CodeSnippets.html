@@ -1,0 +1,40 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+<style>
+	* {
+		background: linear-gradient(#fff, #fff)50% 100%/180px 180px no-repeat#F48B26;
+		margin: 0;
+
+		+* {
+			background: #fff;
+			margin: 90 170 150;
+			border-radius: 50%;
+			box-shadow: 0 0 0 20px#F48B26, 0 -65px 0-15px#fff
+		}
+	}
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+	* {
+		background: #F48B26;
+
+		>* {
+			background: #fff
+		}
+
+		+* {
+			margin: 120 110 0
+		}
+	}
+
+	p {
+		position: fixed;
+		padding: 30;
+		border-radius: 50%;
+		margin: -30 60;
+		box-shadow: 0 0 0 21q#F48B26, 0 -65px 0-16q#fff
+	}
+</style>
