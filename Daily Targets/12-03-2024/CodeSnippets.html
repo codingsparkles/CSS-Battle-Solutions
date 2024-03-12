@@ -1,0 +1,105 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+<p>
+<p a></p><i></i>
+<style>
+	* {
+		background: #085328
+	}
+
+	p {
+		width: 140;
+		height: 30;
+		background: #0A9949;
+		border-radius: 32q;
+		margin: 70 122;
+		-webkit-box-reflect: below 100px
+	}
+
+	[a] {
+		width: 180;
+		background: #49C85B;
+		margin: -120 102;
+		-webkit-box-reflect: below 140px
+	}
+
+	i {
+		background: #49C85B;
+		height: 140;
+		width: 40;
+		position: fixed;
+		margin: 120 172
+	}
+</style>
+
+<!-- Method 2 -->
+
+<a><b>
+		<c></c>
+	</b></a>
+<style>
+	* {
+		background: #085328;
+
+		>* {
+			position: fixed;
+			border-radius: 32q;
+			background: #49C85B;
+			height: 30
+		}
+	}
+
+	a {
+		width: 140;
+		margin: 62 122;
+		background: #0A9949;
+		-webkit-box-reflect: below 106q
+	}
+
+	b {
+		width: 180;
+		margin: -20-20;
+		-webkit-box-reflect: below 140px
+	}
+
+	c {
+		padding: 60 20;
+		margin: 50 70
+	}
+</style>
+
+<!-- Method 3 - Optimized version of Method 2 -->
+
+<a><b>
+		<c></c>
+	</b></a>
+<style>
+	* {
+		background: #085328;
+
+		>* {
+			position: fixed;
+			border-radius: 32q;
+			background: #49C85B
+		}
+	}
+
+	a {
+		padding: 15 70;
+		margin: 62 122;
+		background: #0A9949;
+		box-shadow: 0 130px#0A9949
+	}
+
+	b {
+		padding: 15 90;
+		margin: -35-90;
+		box-shadow: 0 170px#49C85B
+	}
+
+	c {
+		padding: 90 20;
+		margin: 0-20
+	}
+</style>
