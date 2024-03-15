@@ -1,0 +1,54 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<a></a>
+<p></p>
+<style>
+	* {
+		>* {
+			position: fixed
+		}
+
+		background:#FFFFCD
+	}
+
+	a {
+		padding: 80;
+		background: #E78320;
+		margin: 42 112 90;
+		clip-path: polygon(29%0, 71%0, 100%100%, 0%100%)
+	}
+
+	p {
+		padding: 10 100;
+		background: #EDAF38;
+		margin: 202 92;
+		border-radius: 21q;
+		box-shadow: -21q 21q#F1D31D, 21q 21q#F1D31D
+	}
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+	* {
+		background: #FFFFCD;
+
+		+* {
+			background: #EDAF38;
+			margin: 210 100 70;
+			border-radius: 21q;
+			box-shadow: -21q 21q#F1D31D, 21q 21q#F1D31D
+		}
+	}
+
+	p {
+		position: fixed;
+		padding: 80;
+		background: #E78320;
+		margin: -160 20;
+		clip-path: polygon(29%0, 71%0, 100%100%, 0%100%)
+	}
+</style>
