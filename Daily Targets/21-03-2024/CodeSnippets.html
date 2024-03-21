@@ -1,0 +1,53 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+<p></p>
+<style>
+	* {
+		background: #301E53
+	}
+
+	body {
+		border: 43q solid#0000;
+		border-top-color: #766D94;
+		margin: 75 50
+	}
+
+	p {
+		position: fixed;
+		border: 48q solid#0000;
+		border-top-color: #A6A0BE;
+		margin: 65;
+		color: #A6A0BE;
+		box-shadow: 0 -55px, -90px -15px 0-10px#301E53, -90px -65px 0-10px;
+		-webkit-box-reflect: right -95q
+	}
+</style>
+
+
+<!-- Method 2 - Optimized version of method 1 -->
+
+<p></p>
+<style>
+	* {
+		>* {
+			border: 43q solid#0000
+		}
+
+		+* {
+			margin: 75 50;
+			border-top-color: #766D94
+		}
+
+		background:#301E53
+	}
+
+	p {
+		border-width: 48q;
+		border-top-color: #A6A0BE;
+		margin: 65;
+		color: #A6A0BE;
+		box-shadow: 0 -55px, -90px -16q 0-10px#301E53, -90px -65px 0-10px;
+		-webkit-box-reflect: right -95q
+	}
+</style>
