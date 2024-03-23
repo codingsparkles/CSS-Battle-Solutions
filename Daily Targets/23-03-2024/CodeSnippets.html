@@ -1,0 +1,89 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+<p>
+<p a></p>
+<style>
+	* {
+		background: linear-gradient(#B04183, #B04183)center/240px 80px no-repeat, linear-gradient(#B04183, #B04183)center/100px 120px no-repeat#5F133F
+	}
+
+	p {
+		position: fixed;
+		width: 10;
+		height: 100;
+		border-radius: 10px;
+		background: #F7BED9;
+		color: #F7BED9;
+		margin: 92 62;
+		box-shadow: 250px 0
+	}
+
+	[a] {
+		height: 160;
+		width: 20;
+		margin: 62 122;
+		box-shadow: 120px 0
+	}
+</style>
+
+<!-- Optimized version of method 1 -->
+
+<p>
+<p a></p>
+<style>
+	* {
+		--a: linear-gradient(#B04183, #B04183)center;
+		background: var(--a)/240px 85q no-repeat, var(--a)/106q 127q no-repeat#5F133F
+	}
+
+	p {
+		position: fixed;
+		width: 10;
+		height: 100;
+		border-radius: 11q;
+		background: #F7BED9;
+		color: #F7BED9;
+		margin: 92 62;
+		box-shadow: 250px 0
+	}
+
+	[a] {
+		height: 160;
+		width: 20;
+		margin: 62 122;
+		box-shadow: 127q 0
+	}
+</style>
+
+<!-- Method 2 -->
+<p>
+<p a></p>
+<style>
+	* {
+		background: #5F133F;
+
+		+* {
+			background: #B04183;
+			margin: 90 150;
+			color: B04183;
+			box-shadow: 90px 0 0-21q, -90px 0 0-21q
+		}
+	}
+
+	p {
+		position: fixed;
+		padding: 50 5;
+		background: #F7BED9;
+		color: F7BED9;
+		border-radius: 11q;
+		margin: 10-80;
+		box-shadow: 250px 0
+	}
+
+	[a] {
+		padding: 80 10;
+		margin: -20;
+		box-shadow: 127q 0
+	}
+</style>
