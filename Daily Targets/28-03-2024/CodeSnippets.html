@@ -1,0 +1,87 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #611B3F
+    }
+
+    body {
+        background: #BE3184;
+        margin: 60 55;
+        border-radius: 43q;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 30
+    }
+
+    p {
+        margin: 0;
+        width: 30;
+        height: 50;
+        border-radius: 43q
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+    * {
+        background: #611B3F;
+
+        >* {
+            border-radius: 43q
+        }
+
+        +* {
+            background: #BE3184;
+            margin: 60 55;
+            padding: 30
+        }
+    }
+
+    p {
+        width: 30;
+        height: 50;
+        color: 611B3F;
+        box-shadow: 53q 0, 106q 0, 159q 0, 212q 0, 0 74q, 53q 74q, 106q 74q, 159q 74q, 212q 74q
+    }
+</style>
+
+<!-- Method 3 - optimized version of method 2 -->
+<p></p>
+<style>
+    * {
+        background: #611B3F;
+
+        >* {
+            border-radius: 43q
+        }
+
+        +* {
+            background: #BE3184;
+            margin: 60 55;
+            padding: 30
+        }
+    }
+
+    p {
+        width: 30;
+        height: 50;
+        color: 611B3F;
+        box-shadow: 53q 0, 106q 0, 159q 0, 212q 0;
+        -webkit-box-reflect: below 20px
+    }
+</style>
