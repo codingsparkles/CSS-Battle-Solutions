@@ -1,0 +1,86 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p>
+<p a></p>
+<style>
+    * {
+        --a: linear-gradient(#A6A0BE, #A6A0BE)center;
+        background: var(--a)/32q 100% no-repeat, var(--a)/100% 32q no-repeat#504371
+    }
+
+    p {
+        position: fixed;
+        height: 150;
+        width: 150;
+        background: #A6A0BE;
+        margin: 67 117;
+        rotate: -45deg
+    }
+
+    [a] {
+        height: 90;
+        width: 90;
+        background: #504371;
+        margin: 97 147
+    }
+</style>
+
+<!-- Method 2 - Optimized version of method 1 -->
+
+<p></p>
+<style>
+    * {
+        --a: linear-gradient(#A6A0BE, #A6A0BE)center;
+        background: var(--a)/32q 100% no-repeat, var(--a)/100% 32q no-repeat#504371
+    }
+
+    p {
+        position: fixed;
+        height: 90;
+        width: 90;
+        background: #504371;
+        margin: 97 147;
+        rotate: 45deg;
+        box-shadow: 0 0 0 32q#A6A0BE
+    }
+</style>
+
+<!-- Method 3 -->
+
+<a><b>
+        <c></c>
+    </b></a>
+<style>
+    * {
+        >* {
+            position: fixed
+        }
+
+        margin:0;
+        background:#504371
+    }
+
+    a,
+    b {
+        background: #A6A0BE;
+        padding: 150 15
+    }
+
+    a {
+        left: 185
+    }
+
+    b {
+        rotate: 90deg;
+        padding: 220 15;
+        top: -70
+    }
+
+    c {
+        padding: 45;
+        margin: -30-45;
+        rotate: 45deg;
+        box-shadow: 0 0 0 32q#A6A0BE
+    }
+</style>
