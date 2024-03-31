@@ -1,0 +1,35 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<style>
+    * {
+        background: #512B2A
+    }
+
+    body {
+        background: #EA6B62;
+        margin: 60 135
+    }
+
+    p {
+        position: fixed;
+        padding: 25;
+        margin: 65 40;
+        box-shadow:0 95q#512B2A,0 -95q#512B2A,138q 0#EA6B62,-138q 0#EA6B62
+    }
+</style>
+
+<!-- Method 2 -->
+
+<style>
+    * {
+        background: #512B2A;
+
+        +* {
+            color: EA6B62;
+            margin: 125 175;
+            box-shadow: 0 95q#512B2A, 0 -95q#512B2A, 138q 0, -138q 0, 0 0 0 42q, 0 -27q 0 42q, 0 27q 0 42q
+        }
+    }
+</style>
