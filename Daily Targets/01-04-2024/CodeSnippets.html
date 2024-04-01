@@ -1,0 +1,37 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p>
+<p a></p>
+<style>
+    * {
+        background: #0A6190
+    }
+
+    p {
+        height: 200;
+        width: 145;
+        background: #EFF8FE;
+        margin: 50 47;
+        clip-path: polygon(14%40%, 48%40%, 100%0, 100%100%, 48%60%, 14%60%, 0%50%);
+    }
+
+    [a] {
+        scale: -1;
+        margin: -250 192
+    }
+</style>
+
+<!-- Method 2 -->
+
+<style>
+    * {
+        background: #0A6190;
+
+        +* {
+            margin: 50 55;
+            background: #EFF8FE;
+            clip-path: polygon(0%50%, 7%40%, 24%40%, 50%0, 76%40%, 93%40%, 100%50%, 93%60%, 76%60%, 50%100%, 24% 60%, 7%60%)
+        }
+    }
+</style>
