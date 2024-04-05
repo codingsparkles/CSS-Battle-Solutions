@@ -1,0 +1,71 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p>
+<p a>
+<p b>
+<p c></p>
+<style>
+  * {
+    background: #631E1D;
+
+    +* {
+      background: #F16B4A;
+      margin: 135 185
+    }
+  }
+
+  p {
+    position: fixed;
+    background: linear-gradient(#0000 75px, #F16B4A 0 90px, #0000 0);
+    border: solid#F16B4A;
+    border-width: 0 15 15 0;
+    padding: 60 30;
+    margin: -105
+  }
+
+  [a] {
+    scale: -1;
+    margin: 0 60
+  }
+
+  [b] {
+    rotate: 90deg;
+    margin: -135 30
+  }
+
+  [c] {
+    rotate: 270deg;
+    margin: 30-75
+  }
+</style>
+
+
+<!-- Method 2 -->
+<p>
+<p a></p>
+<style>
+  * {
+    background: #631E1D;
+
+    >* {
+      background: #F16B4A
+    }
+
+    +* {
+      margin: 135 185
+    }
+  }
+
+  p {
+    position: fixed;
+    padding: 37.5 7.5;
+    margin: -105 0;
+    color: F16B4A;
+    box-shadow: -48q 48q, 48q 0, -48q 0, 64q 111q, 15px 175q, 64q 175q, -32q 175q
+  }
+
+  [a] {
+    rotate: 90deg;
+    margin: -30 90
+  }
+</style>
