@@ -1,0 +1,62 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p>
+<p a>
+<p b></p>
+<style>
+  * {
+    background: #010038;
+    color: #857DA1
+  }
+
+  p {
+    height: 100;
+    width: 30;
+    background: #857DA1;
+    margin: -14 27;
+    box-shadow: 159q 0, 317q 0, 79q 218q, 238q 218q
+  }
+
+  [a],
+  [b] {
+    height: 60;
+    width: 60;
+    border-radius: 50%;
+  }
+
+  [a] {
+    margin: 10 12
+  }
+
+  [b] {
+    margin: -10 87;
+    box-shadow: 159q 0
+  }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+  * {
+    background: #010038;
+    color: 857DA1;
+
+    >* {
+      background: #857DA1
+    }
+
+    +* {
+      margin: 0 185 205;
+      box-shadow: 159q 0, -159q 0, 79q 217q, -79q 217q
+    }
+  }
+
+  p {
+    position: fixed;
+    padding: 30;
+    border-radius: 50%;
+    margin: 90-15;
+    box-shadow: 159q 0, -159q 0, 79q 64q, -79q 64q
+  }
+</style>
