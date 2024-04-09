@@ -1,0 +1,75 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<style>
+  * {
+    background: #F48B26;
+
+    +* {
+      border: solid#FEFF58;
+      border-width: 30 0;
+      margin: 60 200 60 0;
+      background: linear-gradient(90deg, #0000 60px, #FEFF58 0 90px, #0000 0);
+      -webkit-box-reflect: right
+    }
+  }
+
+  p {
+    position: fixed;
+    padding: 48;
+    rotate: 45deg;
+    margin: -108 122;
+    border: 32q solid;
+    border-color: #F48B26#FEFF58#FEFF58#F48B26
+  }
+</style>
+
+<!-- Method 2 - little restructured version of method 1-->
+<p></p>
+<style>
+  * {
+    background: #F48B26;
+
+    +* {
+      border: solid#FEFF58;
+      border-width: 30 0;
+      margin: 60 0;
+      background: linear-gradient(90deg, #0000 60px, #FEFF58 0 90px, #0000 0 310px, #FEFF58 0 340px, #0000 0)
+    }
+  }
+
+  p {
+    position: fixed;
+    padding: 48;
+    rotate: 45deg;
+    margin: -108 122;
+    border: 32q solid;
+    border-color: #F48B26#FEFF58#FEFF58#F48B26
+  }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+  * {
+    background: #F48B26;
+    color: FEFF58;
+
+    >* {
+      border: 32q solid;
+    }
+
+    +* {
+      margin: 60;
+      box-shadow: 106q 0 0 -32q#F48B26, -106q 0 0 -32q#F48B26, 106q 0, -106q 0
+    }
+  }
+
+  p {
+    position: fixed;
+    padding: 48;
+    rotate: 45deg;
+    margin: -108 32;
+    border-color: #F48B26#FEFF58#FEFF58#F48B26
+  }
+</style>
