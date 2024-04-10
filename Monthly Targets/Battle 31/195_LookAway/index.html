@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Solution - Battle #31 - #195 LookAway</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      background: radial-gradient(#F459E3, #E89A52);
+    }
+
+    .container {
+      height: 300px;
+      width: 400px;
+      background: #131313;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .container * {
+      position: absolute;
+    }
+
+    p {
+      height: 190px;
+      width: 240px;
+      border-radius: 145q 145q 265q 265q;
+      margin: 47px 72px;
+      rotate: -15deg;
+      overflow: hidden
+    }
+
+    i {
+      padding: 150px;
+      background: #F459E3;
+      top: -45px;
+      left: -130px;
+      box-shadow: 32q 0#E89A52, 42q 10q#E89A52, 85q 0#F9C96C
+    }
+
+    i,
+    c {
+      position: absolute;
+      border-radius: 50%
+    }
+
+    a {
+      height: 25px;
+      width: 50px;
+      background: #0000;
+      border: solid#131313;
+      border-width: 0 15px 15px;
+      margin: 152px 92px;
+      border-radius: 0 0 53q 53q;
+      -webkit-box-reflect: right 16q
+    }
+
+    c {
+      padding: 7.5px;
+      margin: -8px -15px;
+      background: #131313;
+      box-shadow: 69q 0#131313
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <p><i></i></p>
+    <a>
+      <c></c>
+    </a>
+  </div>
+</body>
+
+</html>
