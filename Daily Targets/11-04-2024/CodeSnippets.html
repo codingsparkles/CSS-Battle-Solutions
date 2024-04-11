@@ -1,0 +1,55 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<i></i>
+<style>
+  * {
+    background: #DBBA30;
+
+    +* {
+      background: repeating-linear-gradient(#A95415 0 60px, #DBBA30 0 70px);
+      margin: 50 100
+    }
+  }
+
+  i {
+    position: fixed;
+    border: 106q solid#0000;
+    border-bottom-color: #DBBA30;
+    background-clip: content-box
+  }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+  * {
+    background: #DBBA30
+  }
+
+  body {
+    background: #A95415;
+    margin: 120 100;
+    box-shadow: 0 74q#A95415, 0 -74q#A95415
+  }
+
+  p {
+    position: fixed;
+    border: 106q solid#0000;
+    border-bottom-color: #DBBA30;
+    margin: -70 0;
+    background-clip: content-box
+  }
+</style>
+
+<!-- Method 3 -->
+<style>
+  * {
+    background: repeating-linear-gradient(#A95415 0 60px, #DBBA30 0 70px)center/212q 212q no-repeat#DBBA30
+  }
+
+  * {
+    border: 106q solid#0000;
+    margin: -25 0;
+    border-bottom-color: #DBBA30
+  }
+</style>
