@@ -31,38 +31,6 @@
 </style>
 
 <!-- Method 2 -->
-<p>
-<p a></p>
-<style>
-  * {
-    background: #EA7457;
-
-    >* {
-      background: #B53733
-    }
-
-    +* {
-      margin: 60 185
-    }
-  }
-
-  p {
-    position: fixed;
-    width: 30;
-    height: 90;
-    margin: 30 75;
-    border: solid#EA7457;
-    border-width: 15 100 15 15;
-    box-shadow: 45px -60px#EA7457, 0 0 0 30px#B53733
-  }
-
-  [a] {
-    scale: -1;
-    margin: 30 -190
-  }
-</style>
-
-<!-- Method 3 -->
 
 <p>
 <p a></p>
@@ -84,5 +52,37 @@
   [a] {
     scale: -1;
     margin: -210 -13
+  }
+</style>
+
+<!-- Method 3 -->
+<p>
+<p a></p>
+<style>
+  * {
+    * {
+      background: #B53733;
+      color: EA7457
+    }
+
+    +* {
+      margin: 60 185
+    }
+
+    background:#EA7457
+  }
+
+  p {
+    position: fixed;
+    padding: 45 15;
+    margin: 30 75;
+    border: solid;
+    border-width: 15 100 15 15;
+    box-shadow: 48q -64q, 0 0 0 32q#B53733
+  }
+
+  [a] {
+    scale: -1;
+    margin: 30-190
   }
 </style>
