@@ -1,0 +1,88 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p>
+<p a>
+<p b></p>
+<style>
+  * {
+    background: #EA7457
+  }
+
+  p {
+    background: #B53733;
+    width: 30;
+    height: 180;
+    margin: 60 177;
+    color: B53733;
+    box-shadow: 45px 0, -45px 0
+  }
+
+  [a] {
+    rotate: 90deg;
+    margin: -315 57;
+    box-shadow: 150px -240px, 150px 75px#EA7457, 150px 0, 0 -315px#EA7457, 0 -240px
+  }
+
+  [b] {
+    height: 90;
+    margin: 255 87;
+    box-shadow: 180px 0
+  }
+</style>
+
+<!-- Method 2 -->
+<p>
+<p a></p>
+<style>
+  * {
+    background: #EA7457;
+
+    >* {
+      background: #B53733
+    }
+
+    +* {
+      margin: 60 185
+    }
+  }
+
+  p {
+    position: fixed;
+    width: 30;
+    height: 90;
+    margin: 30 75;
+    border: solid#EA7457;
+    border-width: 15 100 15 15;
+    box-shadow: 45px -60px#EA7457, 0 0 0 30px#B53733
+  }
+
+  [a] {
+    scale: -1;
+    margin: 30 -190
+  }
+</style>
+
+<!-- Method 3 -->
+
+<p>
+<p a></p>
+<style>
+  * {
+    background: #EA7457
+  }
+
+  p {
+    background: #B53733;
+    width: 30;
+    height: 90;
+    margin: 90 252;
+    border: solid#EA7457;
+    border-width: 15 100 15 15;
+    box-shadow: 45px -60px#EA7457, 0 0 0 30px#B53733, -15px 0 0 30px#EA7457, -30px 0 0 30px#B53733
+  }
+
+  [a] {
+    scale: -1;
+    margin: -210 -13
+  }
+</style>
