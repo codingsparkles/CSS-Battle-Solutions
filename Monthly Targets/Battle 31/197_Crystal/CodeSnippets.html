@@ -1,0 +1,82 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p></p><a></a><b></b>
+<c></c>
+<style>
+  * {
+    background: #5F133F
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >* {
+      position: fixed
+    }
+  }
+
+  p,
+  a,
+  b {
+    width: 50;
+    height: 220;
+    background: linear-gradient(#F7BED9 30px, #F075B0 0 190px, #F7BED9 0);
+    clip-path: polygon(50%0, 100%13.5%, 100%86.5%, 50%100%, 0%86.5%, 0%13.5%)
+  }
+
+  a {
+    rotate: 60deg
+  }
+
+  b {
+    rotate: -60deg
+  }
+
+  c {
+    height: 50;
+    width: 50;
+    border-radius: 50%;
+    background: #F7BED9
+  }
+</style>
+
+
+<!-- Method 2 -->
+<p>
+<p a>
+<p b>
+<p c></p>
+<style>
+  * {
+    background: #5F133F
+  }
+
+  p {
+    position: fixed;
+    width: 50;
+    height: 220;
+    background: linear-gradient(#F7BED9 32q, #F075B0 0 201q, #F7BED9 0);
+    clip-path: polygon(50%0, 100%13.6%, 100%86.3%, 50%100%, 0%86.3%, 0%13.6%);
+    margin: 32 167
+  }
+
+  [a] {
+    rotate: 60deg
+  }
+
+  [b] {
+    rotate: -60deg
+  }
+
+  [c] {
+    height: 50;
+    width: 50;
+    border-radius: 50%;
+    background: #F7BED9;
+    margin: 117 167
+  }
+</style>
