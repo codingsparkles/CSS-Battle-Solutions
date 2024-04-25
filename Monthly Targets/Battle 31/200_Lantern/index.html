@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Solution - Battle #31 - #200 Lantern</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      background: radial-gradient(#FAD3E5, #8B0051);
+    }
+
+    .container {
+      height: 300px;
+      width: 400px;
+      background: #FAD3E5;
+    }
+
+    .container * {
+      background: #8B0051;
+    }
+
+    .parent {
+      height: 100%;
+      margin: 0 175px
+    }
+
+    p {
+      position: absolute;
+      margin: 28px -100px;
+      padding: 62px 125px;
+      clip-path: polygon(50%0, 100%50%, 50%100%, 0%50%)
+    }
+
+    [a] {
+      margin: 148px -100px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="parent">
+      <p>
+      <p a></p>
+    </div>
+  </div>
+</body>
+
+</html>

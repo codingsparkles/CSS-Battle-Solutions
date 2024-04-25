@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Solution - Battle #31 - #199 Antenna</title>
+  <style>
+    * {
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      background: radial-gradient(#F48B26, #b89595, #FEFF58);
+    }
+
+    .container {
+      height: 300px;
+      width: 400px;
+      background: #F48B26;
+      color: #FEFF58;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .parent {
+      height: 100%;
+      margin: 0 190px;
+      background: #FEFF58
+    }
+
+    c,
+    p {
+      position: absolute;
+      background: #FEFF58
+    }
+
+    c {
+      padding: 10px 80px;
+      border-radius: 21q;
+      margin: 30px -70px;
+      box-shadow: -42q 53q, 42q 53q, -84q 106q, 84q 106q
+    }
+
+    p {
+      padding: 50px 80px;
+      background: #F48B26;
+      margin: 200px -210px;
+      box-shadow: 0 0 0 21q;
+      border-radius: 0 42q;
+      -webkit-box-reflect: right 127q
+    }
+
+    i {
+      position: absolute;
+      padding: 35px 55px;
+      margin: -20px -60px;
+      background: #FEFF58;
+      border-radius: 0 11q 0 0
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="parent">
+      <c>
+      </c>
+      <p><i></i></p>
+    </div>
+  </div>
+</body>
+
+</html>
