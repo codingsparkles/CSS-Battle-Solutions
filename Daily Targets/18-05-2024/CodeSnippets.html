@@ -1,0 +1,54 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a></a><b></b>
+<c></c>
+<style>
+    * {
+        background: #81008F;
+
+        * {
+            background: linear-gradient(#DBBEDF 52.5%, #0000 0 62.5%, #DBBEDF 0);
+            margin: 50 150
+        }
+
+        a,
+        b,
+        c {
+            position: fixed
+        }
+
+        a {
+            background: #AD6CB6;
+            padding: 10 50;
+            margin: 105 0;
+            clip-path: polygon(20%0, 80%0, 100%100%, 0%100%)
+        }
+
+        b {
+            padding: 15 50;
+            background: #81008F;
+            margin: 0;
+            clip-path: polygon(0 0, 100%0, 70%100%, 30%100%)
+        }
+
+        c {
+            padding: 15;
+            background: #81008F;
+            margin: 170 35
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<style>
+    * {
+        * {
+            background: linear-gradient(#DBBEDF 52.5%, #AD6CB6 0 62.5%, #DBBEDF 0);
+            margin: 50 150;
+            clip-path: polygon(30%15%, 70% 15%, 100%0, 100%52.5%, 80%52.5%, 100%62.5%, 100%100%, 65%100%, 65%85%, 35%85%, 35%100%, 0%100%, 0%62.5%, 20%52.5%, 0%52.5%, 0%0%);
+        }
+
+        background:#81008F
+    }
+</style>
