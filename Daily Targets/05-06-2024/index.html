@@ -4,7 +4,7 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>CSS Battle Daily Targets Solution - 4th June, 2024</title>
+  <title>CSS Battle Daily Targets Solution - 5th June, 2024</title>
   <style>
     * {
       margin: 0;
@@ -15,34 +15,45 @@
       display: grid;
       place-items: center;
       min-height: 100vh;
-      background: radial-gradient(#0A6190, #EFF8FE);
+      background: radial-gradient(#FAC992, #EFF8FE);
     }
 
     .container {
       height: 300px;
       width: 400px;
-      background: #4F77FF;
-      overflow: hidden;
-      position: relative;
+      background: #F59426;
     }
 
-    .parent {
+    p {
       position: absolute;
-      height: 50px;
-      width: 200px;
-      margin: 125px 100px;
-      background: #4F77FF;
-      color: #4F77FF;
-      box-shadow: 100px -75px 0 25px, -100px 75px 0 25px,
-        0 25px 0 75px #fff, 0 -25px 0 75px #fff
+      padding: 58px;
+      border-radius: 60px;
+      background: linear-gradient(90deg, #FAC992 37%, #0000 0);
+      margin: 84px 150px;
+      -webkit-box-reflect: right -147px
+    }
+
+    [a],
+    [b] {
+      background: linear-gradient(90deg, #FFFFFF 37%, #0000 0);
+      z-index: 1;
+      rotate: 45deg;
+      margin: 109px 180px
+    }
+
+    [b] {
+      rotate: -45deg;
+      margin: 87px 114px
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <div class="parent">
-    </div>
+    <p>
+    <p a>
+    <p b>
+    </p>
   </div>
 </body>
 

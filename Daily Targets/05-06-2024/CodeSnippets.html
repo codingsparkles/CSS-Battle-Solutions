@@ -24,3 +24,39 @@
         box-shadow: 90px 0#fff
     }
 </style>
+
+
+<!-- Method 2 -->
+
+<p>
+<p a>
+<p b></p>
+<style>
+    * {
+        background: #F59426
+    }
+
+    p {
+        position: fixed;
+        padding: 57;
+        border-radius: 60px;
+        background: linear-gradient(90deg, #FAC992 37%, #0000 0);
+        margin: 84 150;
+        -webkit-box-reflect: right -145px
+    }
+
+    [a],
+    [b] {
+        background: linear-gradient(90deg, #FFFFFF 35%, #0000 0);
+        padding: 57;
+        z-index: 1;
+        rotate: 45deg;
+        margin: 109 180;
+        -webkit-box-reflect: right -149px
+    }
+
+    [b] {
+        rotate: -45deg;
+        margin: 84 114
+    }
+</style>
