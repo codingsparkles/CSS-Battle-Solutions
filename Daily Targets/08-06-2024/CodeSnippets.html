@@ -1,0 +1,85 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 - 100% -->
+
+<p></p><a></a><b></b>
+<c></c>
+<style>
+    * {
+        background: #81008F
+    }
+
+    body {
+        display: grid;
+        place-items: center;
+
+        >* {
+            position: fixed;
+            background: #DBBEDF;
+            border-radius: 50%
+        }
+    }
+
+    p {
+        padding: 15 120;
+        border-radius: 5q 5q 32q 32q
+    }
+
+    a {
+        padding: 50 60
+    }
+
+    b,
+    c {
+        background: #81008F;
+        padding: 12.5 15;
+        margin-left: -50;
+        margin-top: 24;
+        rotate: 30deg
+    }
+
+    c {
+        margin-left: 50;
+        rotate: -30deg
+    }
+</style>
+
+<!-- Method 2 - 100%-->
+<p><a></a><b></b></p>
+<style>
+    * {
+        background: #81008F;
+
+        * {
+            border-radius: 50%
+        }
+
+        +* {
+            background: #DBBEDF;
+            margin: 100 140;
+
+            * {
+                position: fixed
+            }
+        }
+    }
+
+    p {
+        padding: 15+120;
+        background: #DBBEDF;
+        margin: 35-60;
+        border-radius: 5q 5q 32q 32q
+    }
+
+    a,
+    b {
+        padding: 12.5 15;
+        rotate: 30deg;
+        margin: 0-40;
+        background: #81008F
+    }
+
+    b {
+        rotate: -30deg;
+        margin: 0 10
+    }
+</style>

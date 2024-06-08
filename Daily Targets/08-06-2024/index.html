@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Targets Solution - 8th June, 2024</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+      background: radial-gradient(#81008F, #DBBEDF);
+    }
+
+    .container {
+      height: 300px;
+      width: 400px;
+      background: #81008F;
+
+      *:not(p) {
+        border-radius: 50%
+      }
+    }
+
+    .parent {
+      background: #DBBEDF;
+      height: 100px;
+      margin: 100px 140px;
+
+      * {
+        position: absolute
+      }
+    }
+
+    p {
+      padding: 15px 120px;
+      background: #DBBEDF;
+      margin: 35px -60px;
+      border-radius: 5q 5q 32q 32q
+    }
+
+    a,
+    b {
+      padding: 12.5px 15px;
+      rotate: 30deg;
+      margin: 0 -40px;
+      background: #81008F
+    }
+
+    b {
+      rotate: -30deg;
+      margin: 0 10px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="parent">
+      <p><a></a><b></b></p>
+    </div>
+  </div>
+</body>
+
+</html>
