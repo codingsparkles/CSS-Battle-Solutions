@@ -1,0 +1,69 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 - 100% -->
+<a></a><b></b>
+<c></c>
+<d></d>
+<style>
+    * {
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            min-height: 300;
+
+            * {
+                --a: 0 120 0 200;
+                padding: 25 5;
+                border: solid#FEFF58;
+                border-width: var(--a)
+            }
+        }
+
+        margin:0;
+        padding:0;
+        background:#F48B26
+    }
+
+    b {
+        --a: 0 100 0 200
+    }
+
+    c {
+        --a: 0 80 0 200
+    }
+
+    d {
+        --a: 0 60 0 200
+    }
+</style>
+
+<!-- Method 2  -->
+
+<a></a><b></b>
+<style>
+    * {
+        background: #F48B26
+    }
+
+    a,
+    b {
+        position: fixed
+    }
+
+    a {
+        background: #FEFF58;
+        padding: 25 135;
+        margin: 27;
+        color: FEFF58;
+        box-shadow:63q 0,11q 63q,53q 63q,21q 127q,42q 127q,32q 180px
+    }
+
+    b {
+        padding: 25 5;
+        margin: 27 227;
+        color: F48B26;
+        box-shadow:11q 63q,21q 127q,32q 180px
+    }
+</style>
