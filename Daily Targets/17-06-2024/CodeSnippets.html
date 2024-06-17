@@ -1,0 +1,105 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p><a></a>
+<c></c>
+<style>
+    * {
+        +* {
+            * {
+                position: fixed;
+                background: #EFF8FE
+            }
+
+            background:#4F77FF;
+            margin:60 35
+        }
+
+        background:#EFF8FE;
+        color:EFF8FE
+    }
+
+    p {
+        margin: 10 40;
+        padding: 37.5 82.5;
+        box-shadow: 85px 85px
+    }
+
+    a {
+        padding: 37.5;
+        border-radius: 50%;
+        margin: 10 215;
+        box-shadow: -175px 85px
+    }
+
+    c {
+        padding: 90 5;
+        margin: 0 20;
+        box-shadow: 280px 0
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p><a></a>
+<style>
+    * {
+        +* {
+            * {
+                position: fixed;
+                background: #EFF8FE
+            }
+
+            background:#4F77FF;
+            margin:60 65;
+            box-shadow:10px 0,
+            -10px 0,
+            30px 0#4F77FF,
+            -30px 0#4F77FF
+        }
+
+        background:#EFF8FE;
+        color:EFF8FE
+    }
+
+    p {
+        margin: 10;
+        padding: 37.5 82.5;
+        box-shadow: 85px 85px
+    }
+
+    a {
+        padding: 37.5;
+        border-radius: 50%;
+        margin: 10 185;
+        box-shadow: -175px 85px
+    }
+</style>
+
+<!-- Method 3 -->
+
+<a></a><b></b><b></b><a></a>
+<style>
+    * {
+        background: #EFF8FE;
+        color: 4F77FF
+    }
+
+    body {
+        background: #4F77FF;
+        margin: 60 65;
+        box-shadow: 0 0 0 11q#EFF8FE, 32q 0, -32q 0;
+        padding: 10;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px
+    }
+
+    a {
+        padding: 37.5+82.5
+    }
+
+    b {
+        padding: 37.5;
+        border-radius: 50%
+    }
+</style>
