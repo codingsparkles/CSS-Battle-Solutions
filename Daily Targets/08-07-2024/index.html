@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Play CSS - 8th July, 2024</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 97vh;
+            background: radial-gradient(#0A6190, #f7e4ed, #328FC1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .wrapper {
+            height: 300px;
+            width: 400px;
+            background: #0A6190;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .parent {
+            position: absolute;
+            height: 100px;
+            width: 400px;
+            background: #328FC1;
+            margin: 100px 0
+        }
+
+        p,
+        a {
+            position: absolute;
+            background: #0A6190;
+            padding: 50px 75px;
+            margin: 0 -25px;
+            clip-path: polygon(0%0, 100%0, 67%100%, 33%100%)
+        }
+
+        a {
+            scale: -1;
+            margin: 0 275px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="parent">
+            <p></p><a></a>
+        </div>
+    </div>
+</body>
+
+</html>
