@@ -1,0 +1,118 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 - 99% -->
+<p>
+<p a></p>
+<style>
+    * {
+        background: #243D83
+    }
+
+    body {
+        background: #6592CF;
+        margin: 0 200 200 0;
+        box-shadow: 200px 200px#6592CF
+    }
+
+    p {
+        position: fixed;
+        padding: 50 40;
+        margin: 0 60;
+        clip-path: polygon(0%0, 100%0, 50%100%)
+    }
+
+    [a] {
+        scale: -1;
+        margin: 200 260
+    }
+</style>
+
+<!-- Method 2 - 99% -->
+
+<a><b></b></a>
+<style>
+    * {
+        background: #243D83;
+        margin: 0
+    }
+
+    a,
+    b {
+        position: fixed;
+        padding: 50;
+        background: linear-gradient(248deg, #243D83 37px, #6592CF 0);
+        -webkit-box-reflect: right
+    }
+
+    b {
+        scale: -1;
+        margin: 150 250
+    }
+</style>
+
+<!-- Method 3 - 100% -->
+<a><b></b></a>
+<style>
+    * {
+        background: #243D83
+    }
+
+    a,
+    b {
+        position: fixed;
+        color: 6592CF;
+        border: solid;
+        border-top-color: #243D83;
+        border-width: 100 40 0;
+        margin: -8 52;
+        box-shadow: 60px 0, -60px 0
+    }
+
+    b {
+        scale: -1;
+        margin: 100 160
+    }
+</style>
+
+<!-- Method 4 - 100% -->
+<a></a><b></b>
+<style>
+    * {
+        background: #243D83
+    }
+
+    a,
+    b {
+        position: fixed;
+        background: #6592CF;
+        padding: 50 100;
+        margin: -8;
+        clip-path: polygon(30%0, 50%100%, 70%0, 100%0, 100%100%, 0%100%, 0%0)
+    }
+
+    b {
+        scale: -1;
+        margin: 192
+    }
+</style>
+
+<!-- Method 5 - 100% -->
+<p>
+<p a></p>
+<style>
+    * {
+        background: #243D83
+    }
+
+    p {
+        background: #6592CF;
+        height: 100;
+        width: 200;
+        margin: -8;
+        clip-path: polygon(30%0, 50%100%, 70%0, 100%0, 100%100%, 0%100%, 0%0)
+    }
+
+    [a] {
+        scale: -1;
+        margin: 108 192
+    }
+</style>
