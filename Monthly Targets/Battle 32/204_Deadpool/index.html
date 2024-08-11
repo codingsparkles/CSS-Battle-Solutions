@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #32 - #204 Deadpool</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#F3AC3C, #9F3333, #fff);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #F3AC3C;
+    }
+
+    .parent {
+      height: 166px;
+      background: #000;
+      margin: 71px 117px 63px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 17px#9F3333;
+
+      * {
+        position: absolute
+      }
+    }
+
+    p {
+      padding: 84px 18px;
+      background: #9F3333;
+      margin: 0 65px
+    }
+
+    a,
+    b {
+      padding: 7.3px 15px;
+      background: #fff;
+      border-radius: 0 0 30px 30px;
+      margin: 71px 18px;
+      rotate: 28deg
+    }
+
+    b {
+      margin: 71px 117px;
+      rotate: -28deg
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <p></p><a></a><b></b>
+    </div>
+  </div>
+</body>
+
+</html>
