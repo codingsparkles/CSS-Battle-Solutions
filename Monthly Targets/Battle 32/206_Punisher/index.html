@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #32 - #206 Punisher</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#000, #CAE5DC);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #CAE5DC;
+      position: relative;
+
+      * {
+        position: absolute;
+      }
+    }
+
+    .parent {
+      height: 140px;
+      width: 140px;
+      margin: 40px 130px 120px
+    }
+
+    .parent,
+    c {
+      border-radius: 50%
+    }
+
+    .parent,
+    a,
+    b {
+      background: #000
+    }
+
+    a {
+      padding: 10px 50px;
+      margin: 120px 20px
+    }
+
+    b {
+      padding: 55.5px 8px;
+      margin: -8px -38px;
+      box-shadow: 22q 0, 42q 0, 63q 0
+    }
+
+    c {
+      background: linear-gradient(152deg, #000 50%, #CAE5DC 0);
+      padding: 22.5px;
+      margin: -120px 40px;
+      -webkit-box-reflect: left 22q
+    }
+
+    d {
+      background: #CAE5DC;
+      padding: 15px 10px;
+      margin: -81px 20px;
+      clip-path: polygon(50%0, 0%100%, 100%100%)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <a><b>
+          <c></c>
+          <d></d>
+        </b></a>
+    </div>
+  </div>
+</body>
+
+</html>
