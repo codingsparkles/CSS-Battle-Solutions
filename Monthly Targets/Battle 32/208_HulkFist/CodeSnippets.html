@@ -1,0 +1,71 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<a>
+  <c></c>
+</a>
+<style>
+  * {
+    background: radial-gradient(1q, #161D1A 122q, #107640 0)
+  }
+
+  a,
+  c {
+    background: #107640;
+    position: fixed
+  }
+
+  a {
+    padding: 25.5 11;
+    margin: 115 124;
+    color: 107640;
+    box-shadow: 36px -20px, 72px -25px, 108px -20px
+  }
+
+  c {
+    padding: 21 43;
+    margin: 2 43;
+    box-shadow: 0 0 0 7px#161D1A, -32px 50px 0 22px, -32px 32px 0 22px, -32px 25px 0 22px#161D1A
+  }
+</style>
+
+<!-- Method 2 -->
+<a><b>
+    <c></c>
+  </b></a>
+<style>
+  * {
+    +* {
+      * {
+        position: fixed
+      }
+
+      background:#161D1A;
+      border-radius:50%;
+      margin:35 85
+    }
+
+    background:#107640;
+    color:161D1A
+  }
+
+  a {
+    padding: 25.5 11;
+    margin: 88 47;
+    color: 107640;
+    box-shadow: 36px -20px, 72px -25px, 108px -20px
+  }
+
+  b {
+    padding: 65;
+    margin: 12-11;
+    box-shadow: 0-7px
+  }
+
+  c {
+    padding: 21 43;
+    border: 7px solid;
+    margin: -82-18
+  }
+</style>

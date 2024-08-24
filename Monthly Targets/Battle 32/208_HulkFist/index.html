@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #32 - #208 Hulk Fist</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#107640, #161D1A);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #107640;
+    }
+
+    .parent {
+      height: 230px;
+      background: #161D1A;
+      border-radius: 50%;
+      margin: 35px 85px;
+
+      * {
+        position: absolute;
+        background: #107640;
+      }
+    }
+
+    a {
+      padding: 25.5px 11px;
+      margin: 88px 47px;
+      color: #107640;
+      box-shadow: 36px -20px, 72px -25px, 108px -20px
+    }
+
+    b {
+      padding: 65px;
+      margin: 12px -11px;
+      box-shadow: 0 -7px#161D1A
+    }
+
+    c {
+      padding: 21px 43px;
+      border: 7px solid#161D1A;
+      margin: -82px -18px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <a><b>
+          <c></c>
+        </b></a>
+    </div>
+  </div>
+</body>
+
+</html>
