@@ -1,0 +1,89 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 - 99.9% -->
+
+<p>
+<p></p>
+</p>
+<style>
+  * {
+    background: #49C85B
+  }
+
+  p {
+    position: fixed;
+    padding: 68 78;
+    margin: 32 114;
+    background: conic-gradient(at 50%0%, #0000 0 150deg, #2F5A76 150deg 210deg, #0000 0)
+  }
+
+  p+p {
+    scale: -1;
+    margin: 115 114;
+  }
+</style>
+
+<!-- Method 2 - 99.9%-->
+
+<p>
+<p></p>
+</p>
+<style>
+  * {
+    background: #49C85B
+  }
+
+  p {
+    position: fixed;
+    height: 136;
+    width: 158;
+    margin: 32 113;
+    background: #2F5A76;
+    clip-path: polygon(50%0%, 0%100%, 99.5%100%)
+  }
+
+  p+p {
+    scale: -1;
+    width: 159;
+    height: 137;
+    margin: 114 112;
+  }
+</style>
+
+<!-- Method 3 - 99.9% -->
+
+<p>
+<p></p>
+</p>
+<style>
+  * {
+    background: #49C85B
+  }
+
+  p {
+    position: fixed;
+    border: solid;
+    border-width: 0 79 137;
+    border-color: #0000#0000#2F5A76;
+    margin: 31 113
+  }
+
+  p+p {
+    scale: -1;
+    margin: 114 113;
+    background-clip: content-box
+  }
+</style>
+
+<!-- Method 4 - 100% -->
+
+<style>
+  * {
+    * {
+      background: #2F5A76;
+      margin: 40 121;
+      clip-path: polygon(50%0%, 80%37.5%, 100%37.5%, 90%50%, 100%62%, 80%62%, 50%100%, 20%62%, 0%62%, 10%50%, 0%37.5%, 20%37.5%)
+    }
+
+    background:#49C85B
+  }
+</style>
