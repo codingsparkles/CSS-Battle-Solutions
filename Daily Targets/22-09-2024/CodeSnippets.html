@@ -1,0 +1,143 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 - 99.9%-->
+
+<div>
+  <e></e>
+  <d></d>
+  <c></c>
+  <b></b>
+  <a></a>
+</div>
+<style>
+  * {
+    background: #E3516E
+  }
+
+  div {
+    position: relative;
+    width: 120;
+    height: 160;
+    background: #FADE8B;
+    border-radius: 1in;
+    top: 62;
+    left: 132;
+    overflow: hidden
+  }
+
+  div * {
+    position: absolute;
+    background: #FADE8B;
+    border-radius: 1in;
+    border: 10px solid#E3516E;
+    padding: 30;
+    top: 110;
+    left: 70
+  }
+
+  b {
+    padding: 40;
+    top: 84;
+    left: 50
+  }
+
+  c {
+    padding: 50;
+    top: 60;
+    left: 30
+  }
+
+  d {
+    padding: 60;
+    top: 35;
+    left: 10
+  }
+
+  e {
+    padding: 70;
+    top: 10;
+    left: -10
+  }
+</style>
+
+<!-- Method 2 -99.9% -->
+
+<p><a><b>
+      <c>
+        <d>
+          <e>
+            <f></f>
+          </e>
+        </d>
+      </c>
+    </b></a></p>
+<style>
+  * {
+    +* {
+      margin: 70 140
+    }
+
+    background:#E3516E
+  }
+
+  p,
+  p * {
+    border-radius: 1in
+  }
+
+  p {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden
+  }
+
+  p * {
+    position: absolute;
+    padding: 70;
+    background: #FADE8B;
+    border: 11q solid#E3516E;
+    top: -10;
+    left: -20
+  }
+
+  b {
+    top: 10;
+    left: 0
+  }
+
+  b * {
+    top: 15;
+    left: 10
+  }
+
+  c {
+    padding: 60
+  }
+
+  d {
+    padding: 50
+  }
+
+  e {
+    padding: 40
+  }
+
+  f {
+    padding: 30
+  }
+</style>
+
+<!-- Method 3 - 99.9% -->
+
+<style>
+  * {
+    * {
+      margin: 70 140;
+      border-radius: 1in;
+      background-image: radial-gradient(1q at 91.5% 93.5%, #FADE8B 30px, #E3516E 0 40px, #0000 0), radial-gradient(1q at 83% 84%, #FADE8B 40px, #E3516E 0 50px, #0000 0), radial-gradient(1q at 75% 75%, #FADE8B 50px, #E3516E 0 60px, #0000 0), radial-gradient(1q at 66.5% 65.5%, #FADE8B 60px, #E3516E 0 70px, #0000 0), radial-gradient(1q at 58% 56%, #FADE8B 70px, #E3516E 0 80px, #0000 0);
+      background-color: #FADE8B
+    }
+
+    background:#E3516E
+  }
+</style>
