@@ -1,0 +1,84 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 - 99.6% -->
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  * {
+    background: #0B2429
+  }
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80 50 73;
+    gap: 22px 15px
+  }
+
+  p {
+    background: #F3AC3C;
+    height: 70;
+    width: 70;
+    margin: -8+0
+  }
+
+  p:first-child {
+    margin-left: 15px
+  }
+
+  p:nth-of-type(even) {
+    width: 100
+  }
+</style>
+
+<!-- Method 2 - 99.6% -->
+<p></p>
+<style>
+  * {
+    * {
+      border: solid#0B2429;
+      background: #F3AC3C;
+      border-width: 0 15;
+      margin: 72 135 158;
+      box-shadow: 70px 0, -70px 0
+    }
+
+    background:#0B2429;
+    color:F3AC3C
+  }
+
+  p {
+    position: fixed;
+    padding: 35;
+    margin: 85-0;
+    box-shadow: 100px 0, -100px 0
+  }
+</style>
+
+<!-- Method 3 - 99.6% -->
+
+<p></p>
+<style>
+  * {
+    +* {
+      border: solid#F3AC3C;
+      border-width: 70 0;
+      margin: 72 50 73
+    }
+
+    background:#0B2429
+  }
+
+  p {
+    position: fixed;
+    padding: 42 7.5;
+    margin: -70 0;
+    color: 0B2429;
+    box-shadow: 85px 0, 200px 0, 285px 0, 100px 71px, 185px 71px
+  }
+</style>
