@@ -1,0 +1,117 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 - 100% -->
+
+<p><a></a><b></b></p>
+<style>
+  * {
+    +* {
+      * {
+        position: fixed
+      }
+
+      background:radial-gradient(100px 14px at center, #FADE8B 70px, #594C94 0);
+      border-radius:50%;
+      margin:80 70 140
+    }
+
+    background:#FADE8B
+  }
+
+  p {
+    padding: 100 40;
+    margin: 20 90;
+    background: #594C94
+  }
+
+  a,
+  b {
+    padding: 5 10;
+    background: #FADE8B;
+    margin: -85-82;
+    clip-path: polygon(100%0%, 0%50%, 100%100%)
+  }
+
+  b {
+    scale: -1;
+    margin: -85 60
+  }
+</style>
+
+<!-- Method 2 - 100% -->
+
+<p><a></a><b></b></p>
+<style>
+  * {
+    * {
+      * {
+        position: fixed
+      }
+
+      background:#594C94;
+      margin:100 160 0
+    }
+
+    background:#FADE8B
+  }
+
+  p {
+    padding: 40 130;
+    border-radius: 50%;
+    background: radial-gradient(106q 15q at 50%, #0000 74q, #594C94 0);
+    margin: -20-90
+  }
+
+  a,
+  b {
+    padding: 5 10;
+    margin: -5-82;
+    background: #FADE8B;
+    clip-path: polygon(100%0, 0%50%, 100%100%)
+  }
+
+  b {
+    scale: -1;
+    margin: -5 60
+  }
+</style>
+
+<!-- Method 3 - 100% -->
+
+
+<p><a><a></a></a></p>
+<style>
+  *,
+  a {
+    background: #FADE8B
+  }
+
+  * {
+    * {
+      * {
+        position: fixed
+      }
+
+      background:#594C94;
+      margin:100 160 0
+    }
+  }
+
+  p {
+    padding: 40 130;
+    border-radius: 50%;
+    background: radial-gradient(106q 15q at 50%, #0000 74q, #594C94 0);
+    margin: -20-90
+  }
+
+  a {
+    padding: 5 10;
+    margin: -5-82;
+    clip-path: polygon(100%0, 0%50%, 100%100%)
+  }
+
+  a+a {
+    scale: -1;
+    margin: -5 60
+  }
+</style>
