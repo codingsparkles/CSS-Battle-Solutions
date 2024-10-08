@@ -1,0 +1,59 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 - 100% -->
+
+<p>
+<p a>
+<p b>
+</p>
+</p>
+</p>
+<style>
+  * {
+    background: #8AB8B6
+  }
+
+  p {
+    position: fixed;
+    padding: 30 60;
+    background: linear-gradient(90deg, #F3EAD2 50%, #0000 0), radial-gradient(1q at 75% 50%, #D96C7B 30px, #0000 0);
+    top: 104;
+    left: 20;
+    border-radius: 1in
+  }
+
+  [a] {
+    left: 140
+  }
+
+  [b] {
+    left: 260
+  }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<p></p>
+<style>
+  * {
+    background: #8AB8B6
+  }
+
+  p {
+    position: fixed;
+    padding: 30;
+    background: #F3EAD2;
+    color: #F3EAD2;
+    top: 104;
+    left: 20;
+    border-radius: 50% 0 0 50%;
+    box-shadow: 120px 0, 240px 0
+  }
+
+  p+p {
+    left: 80;
+    border-radius: 50%;
+    background: #D96C7B;
+    color: #D96C7B
+  }
+</style>
