@@ -10,7 +10,7 @@
       background: #AA445F;
       margin: 17 165 173;
       color: AA445F;
-      box-shadow:69q 164q,-69q 164q
+      box-shadow: 69q 164q, -69q 164q
     }
 
     background:#62306D
@@ -21,7 +21,7 @@
     padding: 35;
     border-radius: 50%;
     margin: 175 0;
-    background:linear-gradient(90deg,#E38F66 69q,#0000 0)
+    background: linear-gradient(90deg, #E38F66 69q, #0000 0)
   }
 
   p+p {
@@ -71,5 +71,48 @@
     background: #AA445F;
     padding: 55 35;
     margin: -55 30
+  }
+</style>
+
+<!-- Method 3 - 99.8% -->
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<style>
+  * {
+    background: #62306D
+  }
+
+  body {
+    margin: 17 100 18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 45px
+  }
+
+  p:nth-of-type(odd) {
+    padding: 35;
+    border-radius: 50%;
+    background: #E38F66
+  }
+
+  p:nth-of-type(even) {
+    padding: 55 35;
+    margin: 0;
+    background: #AA445F
+  }
+
+  p:not(:first-child) {
+    margin-left: -5px
+  }
+
+  p:nth-child(4) {
+    margin-left: 0
   }
 </style>
