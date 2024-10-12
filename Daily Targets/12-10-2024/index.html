@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS Battle Daily Target Solution - 12th October, 2024</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(#3F4869, #61A74E);
+            display: grid;
+            place-items: center;
+            user-select: none;
+        }
+
+        .wrapper {
+            height: 300px;
+            width: 400px;
+            background: #3F4869;
+            position: relative;
+        }
+
+        p {
+            border-radius: 50%;
+            border: 75q solid#61A74E;
+            position: absolute;
+            top: 32px;
+            left: 130px;
+            border-left-color: #0000;
+            rotate: -45deg
+        }
+
+        p+p {
+            top: 130px;
+            border-color: #61A74E
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p></p>
+        <p></p>
+    </div>
+</body>
+
+</html>
