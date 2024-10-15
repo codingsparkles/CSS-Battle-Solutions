@@ -1,0 +1,118 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 - 100% -->
+
+<p><a><b></b></a></p>
+<style>
+  * {
+    * {
+      position: fixed;
+      border-radius: 106q 0
+    }
+
+    background:#0B2429;
+    margin:0
+  }
+
+  p {
+    padding: 90;
+    margin: 0 0 0 220;
+    background: #F3AC3C;
+    box-shadow: -220px 120px#F3AC3C
+  }
+
+  a {
+    background: #998235;
+    padding: 75;
+    margin: -90-60;
+    box-shadow: -250px 150px#998235
+  }
+
+  b {
+    background: #1A4341;
+    padding: 60;
+    margin: -75-45;
+    box-shadow: -280px 180px#1A4341
+  }
+</style>
+
+<!-- Method 2 - 100% -->
+
+<a><b>
+    <c></c>
+  </b></a>
+<style>
+  * {
+    * {
+      --b: -233q 127q#F3AC3C;
+      --c: #F3AC3C;
+      position: fixed;
+      border-radius: 106q 0;
+      top: 0;
+      right: 0;
+      box-shadow: var(--b)
+    }
+
+    --c:#0B2429;
+    background:var(--c)
+  }
+
+  a {
+    padding: 90
+  }
+
+  b {
+    --c: #998235;
+    padding: 75;
+    --b: -250px 150px#998235
+  }
+
+  c {
+    --c: #1A4341;
+    padding: 60;
+    --b: -280px 180px#1A4341
+  }
+</style>
+
+
+<!-- Method 3 - 100% -->
+
+<a><b>
+    <c></c>
+  </b></a><a><b>
+    <c></c>
+  </b></a>
+<style>
+  * {
+    * {
+      position: fixed;
+      border-radius: 106q 0;
+      top: 0;
+      right: 0
+    }
+
+    --c:#0B2429;
+    background:var(--c)
+  }
+
+  a {
+    --c: #F3AC3C;
+    padding: 90
+  }
+
+  b {
+    --c: #998235;
+    padding: 75
+  }
+
+  c {
+    --c: #1A4341;
+    padding: 60
+  }
+
+  a+a {
+    top: 120;
+    right: 220;
+    scale: -1
+  }
+</style>
