@@ -1,0 +1,79 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 - 100% -->
+
+<p>
+<p>
+<p a></p>
+</p>
+</p>
+<style>
+  * {
+    background: #E38F66
+  }
+
+  p {
+    position: fixed;
+    padding: 20 50;
+    background: #F7F3D7;
+    color: F7F3D7;
+    box-shadow: 110px 0, -110px 0;
+    top: 64;
+    left: 150
+  }
+
+  p+p {
+    top: 114
+  }
+
+  [a] {
+    top: 164
+  }
+</style>
+
+<!-- Method 2- 100% -->
+
+<p></p>
+<p></p>
+<style>
+  * {
+    * {
+      background: #F7F3D7;
+      box-shadow: 110px 0, -110px 0;
+      margin: 130 150
+    }
+
+    background:#E38F66;
+    color:F7F3D7
+  }
+
+  p {
+    position: fixed;
+    padding: 20 50;
+    color: F7F3D7;
+    top: -50;
+    left: 0
+  }
+
+  p+p {
+    top: 50
+  }
+</style>
+
+<!-- Method 3- 100% -->
+<a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+<style>
+  body {
+    a {
+      background: #F7F3D7;
+      height: 40;
+      width: 100
+    }
+
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:80 40;
+    background:#E38F66
+  }
+</style>
