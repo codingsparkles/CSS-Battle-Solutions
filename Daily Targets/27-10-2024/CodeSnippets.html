@@ -1,0 +1,39 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        body {
+            border-radius: 50%;
+            background: #191210;
+            margin: 110 160;
+            color: 191210;
+            box-shadow: 65px 0, -65px 0, 0 80px, 0 -80px, 65px 80px, 65px -80px, -65px 80px, -65px -85q
+        }
+
+        background:linear-gradient(#ECA03D, #ECA03D)center/127q 127q no-repeat#191210
+    }
+</style>
+
+/* Method 2 */
+
+<p></p>
+<style>
+    * {
+        background: #191210;
+
+        +* {
+            background: #ECA03D;
+            margin: 90 140;
+            padding: 20;
+            color: 191210
+        }
+    }
+
+    p {
+        height: 80;
+        width: 80;
+        border-radius: 50%;
+        box-shadow: 65px 0, -65px 0, 0 80px, 0 -80px, 65px 80px, 65px -80px, -65px 80px, -65px -85q
+    }
+</style>

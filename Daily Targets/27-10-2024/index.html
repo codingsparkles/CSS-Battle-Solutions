@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CSS Battle Daily Target Solution - 25th October, 2024</title>
+    <title>CSS Battle Daily Target Solution - 26th October, 2024</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
         * {
@@ -14,7 +14,7 @@
 
         body {
             min-height: 100vh;
-            background: radial-gradient(#62306D, #F7EC7D);
+            background: radial-gradient(#191210, #ECA03D);
             display: grid;
             place-items: center;
             user-select: none;
@@ -23,23 +23,32 @@
         .wrapper {
             height: 300px;
             width: 400px;
-            overflow: hidden;
+            background: #191210;
+        }
+
+        .parent {
+            background: #ECA03D;
+            margin: 90px 140px;
+            height: 80px;
+            padding: 20px;
+            color: #191210
         }
 
         p {
-            margin: 110px 78px 110px 222px;
+            background: #191210;
             height: 80px;
+            width: 80px;
             border-radius: 50%;
-            background: #F7EC7D;
-            color: #62306D;
-            box-shadow: -72px 0, -144px 0#F7EC7D, 0 0 0 312q
+            box-shadow: 65px 0, -65px 0, 0 80px, 0 -80px, 65px 80px, 65px -80px, -65px 80px, -65px -85q
         }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <p></p>
+        <div class="parent">
+            <p></p>
+        </div>
     </div>
 </body>
 
