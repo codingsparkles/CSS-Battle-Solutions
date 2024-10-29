@@ -1,0 +1,132 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<style>
+    * {
+        background: #6255AA;
+
+        * {
+            --a: 75% 75%;
+            background: linear-gradient(#6255AA, #6255AA)center/var(--a)no-repeat#D96E9F;
+            border-radius: 40px;
+            margin: 50 100
+        }
+    }
+
+    p {
+        --a: 50% 50%;
+        position: fixed;
+        padding: 50;
+        margin: 50;
+        border-radius: 20px
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p><a></a></p>
+<p><a></a></p>
+<style>
+    * {
+        background: #6255AA
+    }
+
+    body,
+    p {
+        display: grid;
+        place-items: center
+    }
+
+    p {
+        --r: 40px;
+        position: fixed;
+        height: 200;
+        width: 200;
+        background: #D96E9F;
+        border-radius: var(--r)
+    }
+
+    a {
+        padding: 75
+    }
+
+    p+p {
+        scale: .5
+    }
+
+    p+p a {
+        padding: 50
+    }
+</style>
+
+<!-- Method 3  -->
+
+<p><a></a></p>
+<p><a></a></p>
+<style>
+    * {
+        background: #6255AA
+    }
+
+    body,
+    p {
+        display: grid;
+        place-items: center
+    }
+
+    p {
+        position: fixed;
+        height: 200;
+        width: 200;
+        background: #D96E9F;
+        border-radius: 40px
+    }
+
+    a {
+        padding: 75
+    }
+
+    p+p {
+        scale: .5
+    }
+
+    p+p a {
+        padding: 50
+    }
+</style>
+
+<!-- Method 3 -->
+
+<p><a></a></p>
+<p><a></a></p>
+<style>
+    * {
+        * {
+            position: fixed
+        }
+
+        background:#6255AA
+    }
+
+    p {
+        padding: 100;
+        background: #D96E9F;
+        border-radius: 40px;
+        margin: 42 92
+    }
+
+    a {
+        padding: 75;
+        margin: -75
+    }
+
+    p+p {
+        a {
+            padding: 50;
+            margin: -50
+        }
+
+        scale:.5
+    }
+</style>
