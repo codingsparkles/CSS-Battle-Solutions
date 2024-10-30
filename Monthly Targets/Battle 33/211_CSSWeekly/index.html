@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #33 - #211 CSS Weekly</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#9B8170, #fff);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #9B8170;
+      position: relative;
+
+      * {
+        background: #9B8170;
+        position: absolute;
+      }
+    }
+
+    a,
+    b {
+      border: 22q solid#fff;
+      padding: 20px;
+      border-radius: 1in 1in 0;
+      top: 90px;
+      left: 210px
+    }
+
+    a+a {
+      left: 110px
+    }
+
+    b {
+      padding: 30px 50px;
+      border-radius: 1in 1in 0 0;
+      top: 160px;
+      left: 180px
+    }
+
+    b+b {
+      left: 80px
+    }
+
+    c,
+    d {
+      background: #9B8170;
+      padding: 20px 10px;
+      margin: 13px 30px
+    }
+
+    d {
+      margin: -82px 70px
+    }
+
+    a,
+    d {
+      rotate: 45deg
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <a></a>
+    <a></a>
+    <b></b>
+    <b>
+      <c>
+        <d></d>
+      </c>
+    </b>
+  </div>
+</body>
+
+</html>

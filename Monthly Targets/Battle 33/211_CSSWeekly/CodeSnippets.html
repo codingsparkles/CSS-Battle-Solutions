@@ -1,0 +1,212 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 - 99.9% -->
+<p></p><a></a><b></b>
+<c>
+  <style>
+    * {
+      background: #9B8170
+    }
+
+    body * {
+      --r: 1in 1in 0 0;
+      position: fixed;
+      border: 20px solid#fff;
+      border-radius: var(--r)
+    }
+
+    p,
+    b {
+      --r: 1in 1in 0;
+      padding: 20;
+      rotate: 45deg;
+      margin: 82 102
+    }
+
+    a {
+      padding: 30 50;
+      margin: 152 72;
+      -webkit-box-reflect: right -40px
+    }
+
+    b {
+      margin: 82 202;
+      box-shadow: 20px 0#9B8170
+    }
+
+    c {
+      padding: 15 10;
+      border: none;
+      margin: 225 172;
+      box-shadow: 60px -48px 0 5px#9B8170;
+    }
+  </style>
+
+  <!-- Method 2 - 100% -->
+
+  <a></a><b></b>
+  <c></c>
+  <d></d>
+  <e></e>
+  <f></f>
+  <style>
+    * {
+      * {
+        position: fixed
+      }
+
+      background:#9B8170
+    }
+
+    a,
+    b,
+    c,
+    d {
+      --r: 1in 1in 0 0;
+      border: 20px solid#fff;
+      border-radius: var(--r)
+    }
+
+    a,
+    b {
+      --r: 1in 1in 0;
+      padding: 20;
+      rotate: 45deg;
+      margin: 83 102
+    }
+
+    b {
+      margin: 83 202
+    }
+
+    c,
+    d {
+      padding: 30 50;
+      margin: 152 172
+    }
+
+    d {
+      margin: 152 72
+    }
+
+    e,
+    f {
+      padding: 20 10;
+      margin: 232 172
+    }
+
+    f {
+      rotate: 45deg;
+      margin: 145 260
+    }
+  </style>
+
+  <!-- Method 3 - 100% -->
+
+  <a></a><a></a><b></b>
+  <c>
+    <d></d>
+  </c>
+  <style>
+    * {
+      * {
+        position: fixed
+      }
+
+      background:#9B8170
+    }
+
+    a,
+    b {
+      --r: 1in 1in 0;
+      border: 20px solid#fff;
+      padding: 20;
+      border-radius: var(--r);
+      margin: 82 102
+    }
+
+    a,
+    b,
+    d {
+      rotate: 45deg
+    }
+
+    a+a {
+      --r: 1in 1in 0 0;
+      padding: 30 50;
+      rotate: 0deg;
+      margin: 152 72;
+      -webkit-box-reflect: right -40px
+    }
+
+    b {
+      margin: 82 202;
+      z-index: -1
+    }
+
+    c,
+    d {
+      padding: 20 10;
+      margin: 215 172
+    }
+
+    d {
+      margin: -87 75
+    }
+  </style>
+
+  <!-- Method 4 - 100% -->
+
+  <a><a></a></a><b></b><b>
+    <c>
+      <d></d>
+    </c>
+  </b>
+  <style>
+    * {
+      * {
+        position: fixed
+      }
+
+      background:#9B8170
+    }
+
+    a,
+    b {
+      border: 22q solid#fff;
+      padding: 20;
+      border-radius: 1in 1in 0;
+      top: 90;
+      left: 210
+    }
+
+    a+a {
+      left: 110
+    }
+
+    b {
+      padding: 30 50;
+      border-radius: 1in 1in 0 0;
+      top: 160;
+      left: 180
+    }
+
+    b b {
+      left: 80
+    }
+
+    c,
+    d {
+      padding: 20 10;
+      margin: 13 30
+    }
+
+    d {
+      margin: -82 70
+    }
+
+    a,
+    d {
+      rotate: 45deg
+    }
+  </style>
