@@ -1,0 +1,51 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        background: linear-gradient(#AA445F, #AA445F)center/320px 220px no-repeat#EEB850;
+
+        * {
+            background: #EEB850;
+            margin: 0 130 220;
+            border-radius: 1in;
+            box-shadow: 0 220px#EEB850
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+    * {
+        background: #EEB850;
+
+        +* {
+            background: #AA445F;
+            margin: 40
+        }
+    }
+
+    p {
+        width: 140;
+        height: 40;
+        border-radius: 0 0 1in 1in;
+        margin: 0 90;
+        -webkit-box-reflect: below 140px
+    }
+</style>
+
+<!-- Method 3 -->
+<style>
+    * {
+        color: EEB850;
+        background: #AA445F;
+        border: 43q solid;
+
+        * {
+            border-radius: 1in;
+            margin: -40 90 180;
+            box-shadow: 0 233q
+        }
+    }
+</style>
