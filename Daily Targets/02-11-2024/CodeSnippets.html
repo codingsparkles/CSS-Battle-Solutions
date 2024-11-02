@@ -1,0 +1,95 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p>
+<p>
+<p a></p>
+</p>
+</p>
+<style>
+    * {
+        background: #9D92C8
+    }
+
+    p {
+        position: fixed;
+        border: solid#F9DDC6;
+        border-width: 0 43q 43q 0;
+        padding: 21.5 20;
+        margin: 124 132
+    }
+
+    p+p {
+        scale: -1;
+        top: 51;
+        left: 48
+    }
+
+    [a] {
+        top: -72;
+        border-radius: 0 0 1in
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+    * {
+        background: #9D92C8;
+
+        +* {
+            border: solid#F9DDC6;
+            border-width: 40 0 0 40;
+            border-radius: 1in 0 0;
+            margin: 52 140 42 180
+        }
+
+        p {
+            background: #F9DDC6;
+            padding: 20 60;
+            position: fixed;
+            margin: 83-80
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<p></p>
+<style>
+    * {
+        background: #9D92C8;
+
+        * {
+            border: solid#F9DDC6;
+            border-width: 40 0 0 40;
+            border-radius: 1in 0 0;
+            margin: 52 140-41 180
+        }
+
+        p {
+            width: 80;
+            margin: 83 0 83-80;
+            border-radius: 0
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+
+<style>
+    * {
+        background: #9D92C8;
+        border: solid#F9DDC6;
+        border-width: 40 0 0 40;
+        border-radius: 1in 0 0;
+        margin: 52 140 42 180;
+
+        * {
+            width: 80;
+            margin: 83 0 43-80;
+            border-radius: 0
+        }
+    }
+</style>
