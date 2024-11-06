@@ -1,0 +1,66 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<a></a><b></b>
+<style>
+  * {
+    background: linear-gradient(#EEF8FF 50%, #8AB8B6 0);
+
+    body {
+      * {
+        position: fixed;
+        background: #4A7D7B;
+      }
+
+      background:#EEF8FF;
+      color:EEF8FF;
+      margin:175 300 75 0;
+      border-radius:50%;
+      box-shadow:106q 0,
+      212q 0,
+      318q 0
+    }
+  }
+
+  a {
+    padding: 70 50;
+    margin: -143 200;
+    clip-path: polygon(0 0, 0%100%, 100% 50%)
+  }
+
+  b {
+    padding: 30 100;
+    margin: -3 100;
+    clip-path: polygon(0%0, 100%0, 82.5%100%, 17.5%100%)
+  }
+</style>
+
+<!-- Method 2 -->
+
+<a></a>
+<a></a>
+<style>
+  & {
+    background: #EEF8FF;
+    color: EEF8FF;
+    margin: 175 300 75 0;
+    border-radius: 50%;
+    box-shadow: 106q 0, 212q 0, 318q 0, 127q 355q 0 328q#8AB8B6
+  }
+
+  a {
+    position: fixed;
+    background: #4A7D7B;
+    --a: 0%100%, 100%50%;
+    padding: 70 50;
+    margin: -151 192;
+    clip-path: polygon(0 0, var(--a))
+  }
+
+  a+a {
+    padding: 30 100;
+    margin: -11 92;
+    --a: 100%0, 82.5%100%, 17.5%100%
+  }
+</style>
