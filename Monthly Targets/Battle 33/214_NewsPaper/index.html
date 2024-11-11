@@ -14,7 +14,7 @@
 
     body {
       min-height: 100vh;
-      background: radial-gradient(#FFED99, #F48B26, #3F8627);
+      background: radial-gradient(#F8F8F8, #787885);
       display: grid;
       place-items: center;
     }
@@ -22,39 +22,38 @@
     .wrapper {
       height: 300px;
       width: 400px;
-      background: #FFED99;
-      position: relative;
+      box-sizing: border-box;
     }
 
+    .wrapper,
     .parent,
     p {
-      background: conic-gradient(at 38.1% 38%, #3F8627 50%, #9F3333 0 75%, #0000 0);
-      margin: 61px 56px;
-      border-radius: 69px 0 198q 122q
+      --w: 20px 30px;
+      --b: 90deg, #787885 0 42q, #F8F8F8 0 60px;
+      background: repeating-linear-gradient(var(--b));
+      border: solid#F8F8F8;
+      border-width: var(--w);
     }
 
     .parent {
-      height: 178px;
-    }
-
-    p,
-    a {
-      position: absolute
+      --b: #F8F8F8 0 11q, #787885 0 20px;
+      margin: 50px 0 -20px;
+      --w: 30px 0 10px;
+      height: 180px;
     }
 
     p {
-      background: #F48B26;
-      padding: 34px 55px;
-      margin: 0;
-      scale: -1;
-      overflow: hidden
+      position: absolute;
+      background: #787885;
+      padding: 5px 170px;
+      margin: -30px 0;
+      --w: 10px 0
     }
 
-    a {
-      background: #FFED99;
-      padding: 13px 8px;
-      margin: -34px -29px;
-      box-shadow: -21q -11q 0 11q
+    p+p {
+      padding: 75px 86px;
+      margin: 20px 74px;
+      --w: 10px
     }
   </style>
 </head>
@@ -62,7 +61,8 @@
 <body>
   <div class="wrapper">
     <div class="parent">
-      <p><a></a></p>
+      <p></p>
+      <p></p>
     </div>
   </div>
 </body>

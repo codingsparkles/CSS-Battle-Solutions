@@ -31,3 +31,37 @@
     box-shadow: 60px 0, 120px 0, 180px 0, 240px 0, 300px 0
   }
 </style>
+
+<!-- Method 2 -->
+
+<p></p>
+<p></p>
+<style>
+  * {
+    --w: 20 30;
+    --b: 90deg, #787885 0 42q, #F8F8F8 0 60px;
+    background: repeating-linear-gradient(var(--b));
+    border: solid#F8F8F8;
+    border-width: var(--w);
+
+    * {
+      --b: #F8F8F8 0 11q, #787885 0 20px;
+      margin: 50 0-20;
+      --w: 30 0 10
+    }
+  }
+
+  p {
+    position: fixed;
+    background: #787885;
+    padding: 5 170;
+    margin: -30 0;
+    --w: 10 0
+  }
+
+  p+p {
+    padding: 75 86;
+    margin: 20 74;
+    --w: 10
+  }
+</style>
