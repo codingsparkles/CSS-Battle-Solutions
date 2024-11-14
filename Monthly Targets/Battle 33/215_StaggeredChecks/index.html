@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #33 - #215 Staggered Checks</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#F8F8F8, #787885);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+    }
+
+    .wrapper,
+    p {
+      background: #6867D4;
+    }
+
+    p,
+    a {
+      position: absolute;
+    }
+
+    p {
+      padding: 96px;
+      background: #000039;
+      rotate: 45deg;
+      margin: 50px 100px
+    }
+
+    a {
+      padding: 96px 4px;
+      color: #6867D4;
+      margin: -96px -80px;
+      box-shadow: 32px 0, 72px 0, 127q 0
+    }
+
+    a+a {
+      rotate: 90deg;
+      margin: -172px -4px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <p><a><a></a></a></p>
+  </div>
+</body>
+
+</html>
