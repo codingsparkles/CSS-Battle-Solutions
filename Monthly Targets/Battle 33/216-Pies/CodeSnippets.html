@@ -1,0 +1,75 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 - 99.9%-->
+
+<a><a></a></a>
+<style>
+  * {
+    background: #37212D
+  }
+
+  a {
+    --a: #BCE6E9;
+    --b: #EE9B99;
+    --c: #76608A;
+    position: fixed;
+    padding: 60;
+    background: radial-gradient(1q at 50%100%, var(--a) 60px, #0000), radial-gradient(1q at 100%100%, var(--b) 120px, var(--c));
+    margin: 82 72
+  }
+
+  a+a {
+    --a: #76608A;
+    --b: #BCE6E9;
+    --c: #EE9B99;
+    rotate: 90deg;
+    margin: 82 192
+  }
+</style>
+
+<!-- Method 2 - 100% -->
+
+<p><a></a></p>
+<p><a></a></p>
+<style>
+  * {
+    --b: #37212D;
+
+    * {
+      padding: 60;
+      position: fixed
+    }
+
+    background:var(--b)
+  }
+
+  p {
+    top: 74;
+    left: 80;
+    overflow: hidden
+  }
+
+  a {
+    position: absolute;
+    border-radius: 50%;
+    margin: 0-60;
+    --b: #BCE6E9;
+    color: EE9B99;
+    box-shadow: 64q 0 0 64q
+  }
+
+  p+p {
+    --b: #EE9B99;
+    rotate: 90deg;
+    left: 200
+  }
+
+  p,
+  p+p a {
+    --b: #76608A
+  }
+
+  p+p a {
+    color: BCE6E9
+  }
+</style>

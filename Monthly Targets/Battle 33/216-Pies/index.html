@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #33 - #216 Pies</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#76608A, #EE9B99, #BCE6E9);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #37212D
+    }
+
+    a {
+      --a: #BCE6E9;
+      --b: #EE9B99;
+      --c: #76608A;
+      position: absolute;
+      padding: 60px;
+      background: radial-gradient(1q at 50%100%, var(--a) 60px, #0000), radial-gradient(1q at 100%100%, var(--b) 120px, var(--c));
+      margin: 90px 80px
+    }
+
+    a+a {
+      --a: #76608A;
+      --b: #BCE6E9;
+      --c: #EE9B99;
+      rotate: 90deg;
+      margin: 90px 200px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <a></a>
+    <a></a>
+  </div>
+</body>
+
+</html>
