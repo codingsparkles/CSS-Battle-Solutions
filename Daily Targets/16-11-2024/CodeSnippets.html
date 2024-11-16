@@ -1,0 +1,89 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a></a><b></b><a></a><b></b><a></a><b></b><a></a><b></b><a></a>
+<style>
+    * {
+        background: #6592CF
+    }
+
+    body {
+        * {
+            height: 30;
+            width: 70;
+        }
+
+        margin:60;
+        display:flex;
+        flex-wrap:wrap;
+        column-gap:35px;
+        row-gap:45px
+    }
+
+    a {
+        background: #EEB850
+    }
+
+    b {
+        background: #243D83
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<p></p>
+<p a></p>
+<style>
+    * {
+        --a: #6592CF;
+        background: var(--a)
+    }
+
+    p {
+        position: fixed;
+        padding: 15 35;
+        --a: #EEB850;
+        color: 243D83;
+        top: 119;
+        left: 165;
+        box-shadow: 111q 0, -111q 0
+    }
+
+    p+p {
+        top: 44;
+        --a: #243D83;
+        color: EEB850
+    }
+
+    [a] {
+        top: 194
+    }
+</style>
+
+<!-- Method 3 -->
+
+<style>
+    * {
+        --a: #EEB850;
+        --b: #243D83;
+        background: linear-gradient(90deg, var(--a) 70px, #0000 0 105px, var(--b)0 175px, #0000 0 210px, var(--a) 0)center/280px 180px no-repeat#6592CF;
+
+        * {
+            margin: 135 60;
+            --a: #243D83;
+            --b: #EEB850;
+            box-shadow: 0 0 0 45px#6592CF
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+<style>
+    & {
+        background: #EEB850;
+        margin: 135 165;
+        color: 243D83;
+        box-shadow: 105px 0, -105px 0, 0 75px, 0 -75px, 105px 75px#EEB850, 105px -75px#EEB850, -105px 75px#EEB850, -105px -75px#EEB850, 0 0 0 212q#6592CF
+    }
+</style>
