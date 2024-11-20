@@ -1,0 +1,38 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        background: #FADE8B;
+
+        * {
+            background: conic-gradient(from 90deg, #3F7331 25%, #61A74E 0);
+            margin: 50 100;
+            clip-path: polygon(100%0, 100%50%, 50%100%, 0%100%, 0%0)
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<style>
+    * {
+        background: #FADE8B;
+
+        * {
+            border: 50px solid;
+            border-color: #3F7331#0000#0000#3F7331;
+            margin: 150 100 50 200;
+            box-shadow: -50px -50px 0 50px#61A74E
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<style>
+    & {
+        background: linear-gradient(135deg, #3F7331 50%, #FADE8B 0);
+        margin: 150 25%50 200;
+        box-shadow: -53q -53q 0 53q#61A74E, 0 0 0 212q#FADE8B
+    }
+</style>
