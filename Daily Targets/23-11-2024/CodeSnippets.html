@@ -1,0 +1,43 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<style>
+    & {
+        background: #243D83;
+        box-shadow: 0 0 0 159q#EEB850;
+        margin: 95 90;
+        border-radius: 21q;
+        padding: 12
+    }
+
+    p {
+        border-block: 16q solid#EEB850;
+        padding: 20;
+        margin: 0 55
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+    * {
+        background: #EEB850;
+
+        * {
+            background: #243D83
+        }
+
+        +* {
+            border-radius: 21q;
+            margin: 95 90;
+            padding: 20 75;
+
+            * {
+                border-block: 15px solid#EEB850;
+                height: 40
+            }
+        }
+    }
+</style>
