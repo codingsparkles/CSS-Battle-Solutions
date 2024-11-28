@@ -1,0 +1,75 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a></a><b></b>
+<c></c>
+<d></d>
+<style>
+    body {
+        * {
+            --r: 0%0%;
+            --b: #F5BB60;
+            padding: 55;
+            background: radial-gradient(1q at var(--r), var(--b) 110px, #0000 0)
+        }
+
+        background:#2F5A76;
+        display:flex;
+        flex-wrap:wrap;
+        margin:40 90
+    }
+
+    a {
+        --r: 100%0%
+    }
+
+    b,
+    c {
+        --b: #F56760
+    }
+
+    d {
+        --r: 0%100%
+    }
+
+    b {
+        --r: 100%100%
+    }
+</style>
+
+<!-- Method 2 -->
+<a></a>
+<b></b>
+<c></c>
+<d></d>
+<style>
+    body {
+        * {
+            padding:55;
+            background: #F5BB60;
+            border-radius: 2in 0 0
+        }
+
+        background:#2F5A76;
+        display:flex;
+        flex-wrap:wrap;
+        margin:40 90
+    }
+
+    a {
+        scale: 1-1
+    }
+
+    b,
+    c {
+        background: #F56760
+    }
+
+    c {
+        scale: -1-1
+    }
+
+    d {
+        scale: -1 1
+    }
+</style>
