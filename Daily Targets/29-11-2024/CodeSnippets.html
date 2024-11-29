@@ -1,0 +1,67 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #35312F;
+
+        * {
+            background: #F3AC3C;
+            margin: 50 100
+        }
+    }
+
+    p {
+        position: fixed;
+        border-inline: 16px solid#35312F;
+        padding: 36 28;
+        margin: 0 56;
+        -webkit-box-reflect: below 56px
+    }
+
+    p+p {
+        rotate: 90deg;
+        margin: 64 120
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #35312F
+    }
+
+    p {
+        padding: 28;
+        background: #F3AC3C;
+        margin: 50 244 196 92;
+        box-shadow: 8q 8q 0 9q#35312F, 26q 26q 0 26q#F3AC3C;
+        -webkit-box-reflect: right 93q
+    }
+
+    p+p {
+        scale: 1-1;
+        margin: -108 292 124 92
+    }
+</style>
+
+<!-- Method3  -->
+
+<style>
+    * {
+        background: #35312F;
+
+        * {
+            background: #F3AC3C;
+            color: F3AC3C;
+            margin: 122 172;
+            box-shadow:76q 76q,76q -76q,0 53q,0 76q,0 -53q,0 -76q,53q 0,76q 0;
+            -webkit-box-reflect:left -56px
+        }
+    }
+</style>
