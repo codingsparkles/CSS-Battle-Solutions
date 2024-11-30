@@ -51,3 +51,35 @@
         left: 149
     }
 </style>
+
+<!-- Method 3 - optimized little bit of method 2 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        --b: #F3EAD2;
+        background: var(--b)
+    }
+
+    body {
+        margin: 145 0;
+        box-shadow: 0-11q 0 10q#8F3F4A
+    }
+
+    p {
+        position: fixed;
+        padding: 70 21;
+        --b: #D96C7B;
+        transform: skewX(-20deg);
+        top: 64;
+        left: 209;
+        z-index: -1
+    }
+
+    p+p {
+        scale: -1 1;
+        --b: #8F3F4A;
+        left: 149
+    }
+</style>
