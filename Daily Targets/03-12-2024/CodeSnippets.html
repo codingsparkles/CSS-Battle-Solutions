@@ -1,0 +1,73 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p>
+<p></p>
+</p>
+<style>
+    * {
+        background: #5DBCF9;
+
+        +* {
+            background: #fff;
+            margin: 0 320 0 40
+        }
+    }
+
+    p {
+        position: fixed;
+        background: #0000;
+        height: 140;
+        width: 140;
+        border-block: 40px solid#fff;
+        margin: 40-60
+    }
+
+    p+p {
+        rotate: 90deg;
+        margin: 60 30;
+        height: 100;
+        width: 120
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        --b: #5DBCF9;
+        background: var(--b);
+
+        +* {
+            --b: #fff;
+            margin: 0 320 0 40
+        }
+    }
+
+    p {
+        position: fixed;
+        --b: #0000;
+        padding: 70;
+        border-block: 43q solid#fff;
+        margin: 40-60
+    }
+
+    p+p {
+        rotate: 90deg;
+        margin: 60 30;
+        padding: 50 60
+    }
+</style>
+
+<!-- Method 3 -->
+
+<style>
+    & {
+        background: #fff;
+        color: 5DBCF9;
+        margin: 90 180;
+        box-shadow: -95q 0 0 11q, -190px 0 0 11q, -100px -180q, -100px 180q, -191q -180q, -191q 180q, -190px 0 0 90px#fff, 0 0 0 300q
+    }
+</style>
