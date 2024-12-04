@@ -1,0 +1,62 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        background: radial-gradient(1q, #E0E7FF 53q, #4F77FF 0 95q, #E0E7FF 0 106q, #4F77FF 0 148q, #E0E7FF 0);
+
+        * {
+            background: #E0E7FF;
+            margin: 130 0 130 160;
+            box-shadow: 158q 0 0 21q#E0E7FF
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+    * {
+        background: #E0E7FF;
+        border: 40px solid#4F77FF;
+        border-radius: 50%;
+        margin: 10 60;
+
+        * {
+            margin: 10;
+
+            * {
+                margin: 30;
+                padding: 20 60;
+                border: none;
+                border-radius: 0;
+                box-shadow: 130px 0 0 20px#E0E7FF
+            }
+        }
+    }
+</style>
+
+<!-- Method 3 - Optimized version of method 2-->
+
+<p></p>
+<style>
+    *:not(p) {
+        border: 43q solid#4F77FF;
+        border-radius: 50%
+    }
+
+    * {
+        background: #E0E7FF;
+        margin: 10 60;
+
+        * {
+            margin: 10;
+
+            * {
+                margin: 30;
+                padding: 20 60;
+                box-shadow: 138q 0 0 21q#E0E7FF
+            }
+        }
+    }
+</style>
