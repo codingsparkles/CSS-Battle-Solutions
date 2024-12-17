@@ -1,0 +1,67 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1  -->
+
+<style>
+    & {
+        color: #588A95;
+        margin: 60 110;
+        box-shadow: inset 24px 24px#fff, inset 48px 48px, inset 72px 72px#fff, inset 96px 96px, inset 120px 120px#fff, inset 144px 144px, inset 168px 168px#fff, inset 182px 182px, 0 0 0 212q#588A95
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<p></p>
+<p a></p>
+<style>
+    * {
+        background: #588A95;
+
+        * {
+            margin: 84 110 60 134;
+            box-shadow: -12px -12px 0 12px#fff
+        }
+    }
+
+    p {
+        position: fixed;
+        padding: 54;
+        margin: 48
+    }
+
+    p+p {
+        padding: 30;
+        margin: 96
+    }
+
+    [a] {
+        padding: 6;
+        margin: 144
+    }
+</style>
+
+<!-- Method 3 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #588A95;
+        margin: 60 110;
+        border: solid#fff;
+        border-width: 24 0 0 24;
+
+        * {
+            margin: 24 0 0 24
+        }
+    }
+
+    p {
+        position: fixed;
+        padding: 30
+    }
+
+    p+p {
+        padding: 6;
+        margin: 72
+    }
+</style>
