@@ -1,0 +1,159 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1  -->
+
+<p></p>
+<p></p>
+<p a></p>
+<style>
+    * {
+        background: #FADE8B;
+
+        +* {
+            background: #594C94;
+            margin: 30 190;
+        }
+    }
+
+    p {
+        background: #0000;
+        position: fixed;
+        border-inline: 20px solid#594C94;
+        padding: 15 141.5;
+        bottom: 14;
+        left: 39
+    }
+
+    p+p {
+        padding: 30 91.5;
+        left: -101;
+        bottom: 0
+    }
+
+    [a] {
+        padding: 60 41.5;
+        left: -51
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+    * {
+        background: #FADE8B;
+
+        +* {
+            background: #594C94;
+            color: 594C94;
+            margin: 30 190;
+            box-shadow: 52px 120px, 102px 180px, 152px 210px, -51px 120px, -101px 180px, -151px 210px
+        }
+    }
+
+    p {
+        position: fixed;
+        background: #0000;
+        border: solid#FADE8B;
+        border-width: 14 39 30;
+        padding: 120 200;
+        top: 0;
+        left: 0
+    }
+</style>
+
+<!-- Method 3 -->
+
+<p></p>
+<p></p>
+<p a></p>
+<style>
+    * {
+        background: #FADE8B;
+
+        * {
+            background: #0000;
+            border-inline: 10px solid#594C94;
+            margin: 30 190
+        }
+    }
+
+    p {
+        position: fixed;
+        border-width: 20;
+        padding: 60 41.5;
+        margin: 120-61
+    }
+
+    p+p {
+        padding: 30 91.5;
+        margin: 180-111
+    }
+
+    [a] {
+        padding: 15 141.5;
+        margin: 210-161
+    }
+</style>
+
+<!-- Method 4 -->
+<p></p>
+<p></p>
+<p a></p>
+<p b></p>
+<style>
+    body,
+    p {
+        background: #FADE8B;
+        display: grid;
+        place-items: center;
+        margin: 15 0
+    }
+
+    p {
+        position: fixed;
+        align-self: end;
+        border-inline: 22q solid#594C94;
+        padding: 15 141.5
+    }
+
+    p+p {
+        padding: 30 91.5
+    }
+
+    [a] {
+        padding: 60 41.5
+    }
+
+    [b] {
+        padding: 120 0;
+        border-width: 10
+    }
+</style>
+
+<!-- Method 5 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #FADE8B;
+        border-inline: 22q solid#594C94;
+        margin: 240 38 30 39;
+
+        * {
+            margin: -30 30 0
+        }
+    }
+
+    p {
+        position: fixed;
+        padding: 60 41.5;
+        margin: -60 30
+    }
+
+    p+p {
+        border-width: 10;
+        padding: 120 0;
+        margin: -180 81
+    }
+</style>
