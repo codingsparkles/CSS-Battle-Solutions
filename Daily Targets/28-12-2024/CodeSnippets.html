@@ -1,0 +1,97 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        background: #61A74E;
+        border-block: 64q solid;
+        border-color: #EA9A52#EA9A52#AA3440;
+        margin: 60 140 60 110;
+        border-radius: 20px;
+        box-shadow: 0 0 0 212q#3F4869;
+
+        * {
+            background: #3F4869;
+            margin: 0 -30 0 60;
+            border-width: 0;
+            box-shadow: 0 60px#AA3440, 0 -60px#EA9A52;
+            border-radius: 0 20px 20px 0
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        --b: #3F4869;
+        background: var(--b);
+
+        * {
+            --b: linear-gradient(#EA9A52 60px, #61A74E 0 127q, #AA3440 0);
+            margin: 60 230 60 110;
+            border-radius: 21q;
+        }
+    }
+
+    p {
+        position: fixed;
+        padding: 30 80;
+        margin: 0 20;
+        --b: #EA9A52;
+    }
+
+    p+p {
+        --b: #AA3440;
+        margin: 120 20
+    }
+</style>
+
+<!-- Method 3 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        --b: #3F4869;
+        background: var(--b);
+
+        * {
+            --b: #61A74E;
+            margin: 60 230 60 110;
+            border-radius: 21q 21q 0;
+        }
+    }
+
+    p {
+        position: fixed;
+        padding: 30 90;
+        margin: 0;
+        --b: #EA9A52;
+        scale: -1 1
+    }
+
+    p+p {
+        --b: #AA3440;
+        margin: 120 0;
+        scale: -1
+    }
+</style>
+
+<!-- Method 4 -->
+<p></p>
+<style>
+    & {
+        background: #3F4869;
+        border-radius: 21q;
+        color: AA3440;
+        box-shadow: 0 60px, 0 -60px#EA9A52;
+        margin: 120 110;
+
+        * {
+            background: #61A74E;
+            margin: 0 120 0 0;
+            box-shadow: 0 42q, 0 -42q#EA9A52
+        }
+    }
+</style>
