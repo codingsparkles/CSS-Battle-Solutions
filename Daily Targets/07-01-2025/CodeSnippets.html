@@ -1,0 +1,65 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<style>
+    & {
+        background: radial-gradient(1q, #4C4C6B 20px, #FAE29E);
+        margin: 110 160;
+        color: 4C4C6B;
+        box-shadow: 106q 0, -106q 0, 0 0 0 212q#4A9A86;
+
+        * {
+            margin: 20-80;
+            border: dotted#FAE29E;
+            border-width: 0 40;
+            width: 160
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+    * {
+        background: #4A9A86;
+
+        * {
+            --a: #4C4C6B;
+            --b: #FAE29E;
+            background: radial-gradient(1q, var(--a) 20px, var(--b));
+            margin: 110 160;
+
+            * {
+                --a: #FAE29E;
+                --b: #4C4C6B;
+                padding: 40;
+                margin: 0 100;
+                -webkit-box-reflect: left 120px
+            }
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+<p></p>
+<style>
+    * {
+        background: #4A9A86;
+
+        * {
+            background: #FAE29E;
+            margin: 110 160;
+            box-shadow: 106q 0, -106q 0;
+            color: 4C4C6B;
+            padding: 20;
+
+            * {
+                border-radius: 50%;
+                background: #4C4C6B;
+                margin: 0;
+                color: FAE29E
+            }
+        }
+    }
+</style>
