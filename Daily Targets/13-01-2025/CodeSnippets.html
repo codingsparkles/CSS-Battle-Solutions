@@ -1,0 +1,43 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a></a>
+<style>
+  * {
+    background: #587795;
+    padding: 10;
+    color: 587795;
+
+    +* {
+      background: #E8AD6D;
+      margin: 60 110;
+
+      * {
+        border-radius: 1in;
+        position: fixed;
+        box-shadow: 60px 0, 120px 0, 0 60px, 60px 60px, 120px 60px, 0 120px, 60px 120px, 120px 120px
+      }
+    }
+  }
+</style>
+
+<!-- Method 2 -->
+<a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a><a></a>
+<style>
+  * {
+    background: #587795;
+    padding: 10;
+
+    body {
+      background: #E8AD6D;
+      margin: 60 110;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px
+    }
+  }
+
+  a {
+    border-radius: 1in;
+  }
+</style>
