@@ -1,0 +1,37 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<style>
+  * {
+    background: #DE817E;
+
+    +* {
+      background: #EBE77E;
+      margin: 100 140 70;
+      clip-path: polygon(25%33%, 50%0, 75%33%, 100%0, 100%100%, 0%100%, 0%0)
+    }
+  }
+
+  p {
+    padding: 5 60;
+    position: fixed;
+    margin: 100 0
+  }
+</style>
+
+<!-- Method 2 -->
+<style>
+  * {
+    background: #DE817E;
+    border: solid#EBE77E;
+    border-width: 42 30;
+    border-top-color: #0000;
+    margin: 25%50%25%140;
+    box-shadow: 0 10px#DE817E, 0 32q#EBE77E;
+
+    * {
+      margin: -42 30
+    }
+  }
+</style>
