@@ -1,0 +1,64 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<p></p>
+<p a></p>
+<style>
+  * {
+    background: #61A74E;
+    border: 20px solid#fff;
+    margin: 30;
+
+    body {
+      border-width: 10;
+      margin: 0 140
+    }
+
+    p {
+      position: fixed;
+      padding: 30 10;
+      margin: 40 110
+    }
+
+    p+p {
+      left: -80
+    }
+
+    [a] {
+      border-radius: 1in;
+      margin: 50 240;
+      padding: 20
+    }
+  }
+</style>
+
+<!-- Method 2 -->
+
+<a></a>
+<a></a>
+<style>
+  * {
+    * {
+      border: 22q solid#fff;
+      background: #61A74E;
+      margin: 30 30 30 190
+    }
+  }
+
+  body {
+    -webkit-box-reflect: left -21q
+  }
+
+  a {
+    position: fixed;
+    padding: 30 10;
+    margin: 50 100
+  }
+
+  a+a {
+    border-radius: 1in;
+    padding: 20;
+    margin: 60-50
+  }
+</style>
