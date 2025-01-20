@@ -14,7 +14,7 @@
 
         body {
             min-height: 100vh;
-            background: radial-gradient(#328FC1, #fff);
+            background: radial-gradient(#594C94, #F9DDC6);
             display: grid;
             place-items: center;
         }
@@ -22,35 +22,36 @@
         .wrapper {
             height: 300px;
             width: 400px;
-            background: #328FC1;
+            background: #594C94;
             position: relative;
             overflow: hidden;
 
             * {
                 position: absolute;
-                background: #FADE8B;
+                background: #594C94;
+                border: solid#F9DDC6;
+                border-width: 50px 26px 50px 0;
             }
         }
 
-        a {
-            margin: 80px 130px;
-            height: 140px;
-            width: 140px
+        p {
+            margin: 11px 77px;
+            height: 178px;
+            width: 220px
         }
 
-        b {
-            padding: 70px;
-            border-radius: 50%;
-            margin: 230px 330px;
-            box-shadow: -424q -317q#FADE8B
+        p+p {
+            margin: 86px -26px 82px 77px;
+            scale: -1;
+            height: 26px
         }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <a></a>
-        <b></b>
+        <p></p>
+        <p></p>
     </div>
 </body>
 
