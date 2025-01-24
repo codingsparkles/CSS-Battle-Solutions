@@ -1,0 +1,68 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 - 99.9% -->
+
+<p><a></a></p>
+<style>
+  * {
+    background: #E0E7FF;
+
+    p {
+      position: relative;
+      padding: 75 20;
+      margin: 75 152;
+      overflow: hidden;
+      clip-path: circle(75% at -13% 50%);
+    }
+
+    a {
+      padding: 90;
+      position: absolute;
+      border-radius: 1in;
+      margin: -90-20;
+      background: linear-gradient(#328FC1 50%, #2D3464 0)
+    }
+  }
+</style>
+
+<!-- Method 2 - 99.9% -->
+
+<p><a></a><a></a></p>
+<style>
+  * {
+    background: #E0E7FF;
+
+    p {
+      position: relative;
+      background: linear-gradient(#328FC1 50%, #2D3464 0);
+      padding: 75 0;
+      margin: 75 152
+    }
+
+    a {
+      position: absolute;
+      padding: 90;
+      border-radius: 50%;
+      margin: -120-30;
+      background: #0000;
+      border: 30px solid#E0E7FF
+    }
+
+    a+a {
+      margin: -120-130
+    }
+  }
+</style>
+
+<!-- Method 3 - 99.9% -->
+
+<style>
+  * {
+    background: #E0E7FF;
+
+    * {
+      background: radial-gradient(1q at -125%50%, #0000 90px, #E0E7FF), linear-gradient(#328FC1 50%, #2D3464 0);
+      margin: 75 160 75 200;
+      -webkit-box-reflect: left
+    }
+  }
+</style>
