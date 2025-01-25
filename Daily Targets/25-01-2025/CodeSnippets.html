@@ -1,0 +1,92 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<p></p>
+<style>
+  * {
+    background: #EA9A52;
+
+    +* {
+      background: #fff;
+      margin: 0 185
+    }
+  }
+
+  p {
+    position: fixed;
+    border-radius: 2in;
+    border: 32q solid#435998;
+    padding: 150 125;
+    margin: 120-140;
+    background: #0000
+  }
+
+  p+p {
+    margin: -180-140;
+    z-index: -1
+  }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+  * {
+    background: #EA9A52;
+    border: 32q solid#435998;
+    border-radius: 2in;
+    margin: -150 45 120;
+
+    * {
+      margin: 240-30-390;
+      background: #0000;
+
+      p {
+        background: #fff;
+        padding: 75 0;
+        margin: 0 110;
+        border: 0;
+        border-radius: 0;
+        box-shadow: 0-180px#fff
+      }
+    }
+  }
+</style>
+
+<!-- Method 3 -->
+<p></p>
+<style>
+  * {
+    background: #EA9A52;
+
+    +* {
+      background: #0000;
+      border: 30px solid#435998;
+      border-radius: 2in;
+      margin: 120 45-150;
+      -webkit-box-reflect: above -60px;
+
+      * {
+        background: #fff;
+        padding: 75 0;
+        margin: 0 110
+      }
+    }
+  }
+</style>
+
+<!-- Method 4 -->
+
+<style>
+  * {
+    background: linear-gradient(#fff, #fff)50%/32q no-repeat#EA9A52;
+    border: 32q solid#435998;
+    border-radius: 2in;
+    margin: -150 45 120;
+
+    * {
+      margin: 240-30-390;
+      background-color: #0000
+    }
+  }
+</style>
