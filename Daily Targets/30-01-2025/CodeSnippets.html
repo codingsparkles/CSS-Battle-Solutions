@@ -1,0 +1,120 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p>
+<p>
+<p a>
+<p b></p>
+</p>
+</p>
+</p>
+<style>
+    * {
+        background: #5AED9C;
+
+        * {
+            background: #4B4D88;
+            margin: 100 150;
+            border-radius: 1in;
+        }
+
+        p {
+            padding: 30 15;
+            position: fixed;
+            margin: -76 35
+        }
+
+        p+p {
+            rotate: 45deg;
+            margin: -48 103
+        }
+
+        [a] {
+            margin: -48 -33;
+            rotate: -45deg
+        }
+
+        [b] {
+            rotate: 90deg;
+            margin: 20 131;
+            -webkit-box-reflect: below 132px
+        }
+    }
+</style>
+<!-- Method 2 -->
+
+<p></p>
+<p></p>
+<p a></p>
+<style>
+    * {
+        background: radial-gradient(1q, #4B4D88 53q, #5AED9C);
+
+        * {
+            background: #4B4D88;
+            border-radius: 2in;
+            margin: 24 185 216
+        }
+
+        p {
+            position: fixed;
+            padding: 30 15;
+            rotate: 45deg;
+            margin: 28 68
+        }
+
+        p+p {
+            left: 49;
+            rotate: -45deg
+        }
+
+        [a] {
+            rotate: 90deg;
+            margin: 96 40;
+            -webkit-box-reflect: below -267q
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+<p></p>
+<p></p>
+<p a></p>
+<p b></p>
+<p c></p>
+<style>
+    * {
+        background: #5AED9C;
+
+        * {
+            background: #4B4D88;
+            margin: 100 150;
+            border-radius: 1in
+        }
+    }
+
+    p {
+        padding: 30 15;
+        position: fixed;
+        margin: -76 35
+    }
+
+    p+p {
+        rotate: 45deg;
+        margin: -48 103
+    }
+
+    [a] {
+        left: 14;
+        rotate: -45deg
+    }
+
+    [b],
+    [c] {
+        rotate: 90deg;
+        margin: 20 131
+    }
+
+    [c] {
+        left: -42
+    }
+</style>
