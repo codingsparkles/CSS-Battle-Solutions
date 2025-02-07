@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #34 - #219 CodePen</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#101724, #fff);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #101724;
+      position: relative;
+
+      * {
+        background: #fff;
+        position: absolute;
+      }
+    }
+
+    p {
+      padding: 38px 108px;
+      margin: 187px 84px;
+      clip-path: polygon(0%0, 13%0, 50%74%, 87%0, 100%0, 50%100%)
+    }
+
+    p+p {
+      top: -71px
+    }
+
+    [a],
+    [b] {
+      scale: -1;
+      top: -147px
+    }
+
+    [b] {
+      top: -75px
+    }
+
+    a {
+      padding: 35px 10px;
+      margin: 117px 84px;
+      box-shadow: 207q 0, 98px -60q, 98px 60q;
+      color: #fff
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <a></a>
+    <p></p>
+    <p></p>
+    <p a></p>
+    <p b></p>
+  </div>
+</body>
+
+</html>
