@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #34 - #221 Entangled</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#E25C57, #F4DA64, #3F4869);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .wrapper * {
+      position: absolute;
+    }
+
+    .parent {
+      background: #E25C57;
+      border-radius: 2in;
+      box-shadow: -106q 0#F4DA64, 0 0 0 200px#3F4869;
+      margin: 60px 60px 60px 160px;
+      height: 180px;
+      width: 180px;
+    }
+
+    p {
+      background: #F4DA64;
+      padding: 45px;
+      box-shadow: none;
+      margin: 90px -11px;
+      border-radius: 0 0 1in
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <p></p>
+    </div>
+  </div>
+</body>
+
+</html>

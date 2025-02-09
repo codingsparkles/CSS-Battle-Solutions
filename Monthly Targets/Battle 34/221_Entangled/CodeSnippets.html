@@ -1,0 +1,112 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p></p>
+<style>
+  * {
+    --b: #3F4869;
+    background: var(--b);
+
+    * {
+      --b: #E25C57;
+      color: F4DA64;
+      border-radius: 2in 2in 0 0;
+      margin: 60 60 150 160;
+      box-shadow: -106q 0;
+
+      * {
+        color: E25C57;
+        --b: #F4DA64;
+        scale: -1;
+        margin: 90-100;
+        padding: 45 90;
+        position: fixed
+      }
+    }
+  }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<p></p>
+<p a></p>
+<style>
+  * {
+    --b: #3F4869;
+    background: var(--b);
+
+    * {
+      border-radius: 2in 2in 0 0;
+      --b: #F4DA64;
+      margin: 60 40%35%60
+    }
+  }
+
+  p {
+    position: fixed;
+    padding: 45 90;
+    margin: 0 100;
+    --b: #E25C57
+  }
+
+  p+p {
+    scale: -1;
+    margin: 90 100
+  }
+
+  [a] {
+    --b: #F4DA64;
+    left: -40
+  }
+</style>
+
+
+<!-- Method 3 -->
+
+<p></p>
+<style>
+  * {
+    background: #3F4869;
+
+    * {
+      border-radius: 2in
+    }
+
+
+    +* {
+      background: #F4DA64;
+      border-radius: 2in;
+      margin: 60 160 60 60;
+      box-shadow: 106q 0#E25C57
+    }
+  }
+
+  p {
+    position: fixed;
+    padding: 90;
+    margin: 0 100;
+    background: conic-gradient(#E25C57 50%, #0000 0 75%, #E25C57 0)
+  }
+</style>
+
+<!-- Method 4 -->
+<p></p>
+<style>
+  & {
+    background: #E25C57;
+    border-radius: 2in;
+    box-shadow: -106q 0#F4DA64, 0 0 0 200px#3F4869;
+    margin: 60 60 60 160;
+  }
+
+  p {
+    background: #F4DA64;
+    padding: 45;
+    position: fixed;
+    box-shadow: none;
+    margin: 82-18;
+    border-radius: 0 0 1in
+  }
+</style>
