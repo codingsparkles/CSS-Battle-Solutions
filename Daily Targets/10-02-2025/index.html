@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CSS Battle Daily Target Solution - 9th February, 2025</title>
+    <title>CSS Battle Daily Target Solution - 10th February, 2025</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
         * {
@@ -14,7 +14,7 @@
 
         body {
             min-height: 100vh;
-            background: linear-gradient(#6592CF, #243D83);
+            background: linear-gradient(#fff 5%, #6592CF);
             display: grid;
             place-items: center;
         }
@@ -23,25 +23,29 @@
             background: #6592CF;
             height: 300px;
             width: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .wrapper,
+        p {
+            --b: #fff;
+            background: radial-gradient(1q, #328FC1 25px, var(--b));
         }
 
         p {
             position: absolute;
-            background: radial-gradient(1q, #243D83 25px, #6592CF 0 127q, #243D83);
-            margin: 14px 125px;
-            padding: 136px 75px;
-        }
-
-        p+p {
-            margin: 75px 40px;
-            padding: 75px 160px;
+            --b: #fff 0 127q, #328FC1;
+            margin: 75px -215px 75px 295px;
+            -webkit-box-reflect: left 201q;
+            height: 150px;
+            width: 300px
         }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
-        <p></p>
         <p></p>
     </div>
 </body>
