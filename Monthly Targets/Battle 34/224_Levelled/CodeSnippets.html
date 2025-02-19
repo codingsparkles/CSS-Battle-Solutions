@@ -1,0 +1,54 @@
+<!-- Here added closing tags to format the code properly -->
+
+<!-- Method 1 -->
+
+<p></p>
+<style>
+  * {
+    border: 32q solid;
+    border-radius: 2in;
+    margin: 30 80;
+    box-shadow: 0 0 0 2in#F8B140;
+
+    * {
+      margin: 15;
+      border-width: 50;
+      border-color: #0000#67AED4#67AED4#0000;
+      rotate: 45deg;
+      box-shadow: none;
+
+      * {
+        border-width: 25;
+        margin: 0;
+        border-color: #fff;
+        color: 67AED4;
+        box-shadow: 0 53q, 0-53q
+      }
+    }
+  }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+  * {
+    background: radial-gradient(1q at 50%40%, #fff 90px, #000 0 127q, #F8B140);
+
+    +* {
+      background: #67AED4;
+      border-radius: 0 0 2in 2in;
+      margin: 150 125 75
+    }
+
+    p {
+      background: #fff;
+      padding: 25;
+      border-radius: 2in;
+      position: fixed;
+      margin: -25 50;
+      color: 67AED4;
+      box-shadow: 53q 0, -53q 0
+    }
+  }
+</style>
