@@ -1,0 +1,41 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1-->
+<p></p>
+<style>
+    * {
+        background: #183539;
+
+        +* {
+            background: radial-gradient(1q at 0%76%, #183539 25px, #EBE77E);
+            margin: 15 150;
+            border-radius: 2in 2in 0 0
+        }
+    }
+
+    p {
+        padding: 7.5 25;
+        margin: 90 0;
+        position: fixed
+    }
+</style>
+
+<!-- Method 2 -->
+<style>
+    * {
+        background: #183539
+    }
+
+    & {
+        border: solid#EBE77E;
+        border-width: 90 50 165 0;
+        margin: 15 150;
+        border-radius: 2in 2in 0 0;
+
+        * {
+            padding: 25;
+            border-radius: 50%;
+            position: fixed;
+            margin: 90-25
+        }
+    }
+</style>
