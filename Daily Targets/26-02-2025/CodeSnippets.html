@@ -1,0 +1,74 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1-->
+<p></p>
+<style>
+    * {
+        background: #46BA67;
+        border-inline: 43q solid;
+        color: 4C4C6B;
+        margin: 170 80 0;
+
+        * {
+            color: FAE29E;
+            margin: -200 60 170;
+            border-width: 20;
+
+            * {
+                border: 20px solid#4C4C6B;
+                border-radius: 50%;
+                margin: 160-20;
+                position: fixed;
+                box-shadow: 106q 0, -106q 0;
+                color: FAE29E
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+    * {
+        --b: #46BA67;
+        background: var(--b);
+
+        * {
+            --a: 180q;
+            --b: #FAE29E;
+            color: 4C4C6B;
+            margin: 0 45%170;
+            box-shadow: 106q var(--a), -106q var(--a)
+        }
+    }
+
+    p {
+        --b: #4C4C6B;
+        padding: 20;
+        border-radius: 50%;
+        margin: 130 0;
+        position: fixed;
+        --a: 0;
+        color: FAE29E
+    }
+</style>
+
+<!-- Method 3 -->
+<style>
+    & {
+        background: #46BA67;
+        color: 4C4C6B;
+        border: 22q solid#FAE29E;
+        margin: 0 45%170;
+        box-shadow: 106q 180q, -106q 180q;
+
+        * {
+            margin: 110-20;
+            border-radius: 50%;
+            position: fixed;
+            color: FAE29E;
+            border: 22q solid#4C4C6B;
+            box-shadow: 106q 0, -106q 0
+        }
+    }
+</style>
