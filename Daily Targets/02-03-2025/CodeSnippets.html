@@ -1,0 +1,92 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1-->
+<style>
+    * {
+        color: 1A353C;
+        box-shadow: 0-21q#84B9C7, 0-53q;
+    }
+
+    & {
+        border-inline: 32q solid;
+        background: #84B9C7;
+        margin: 150 130 46;
+
+        * {
+            background: radial-gradient(1q at 32q 0%, #84B9C7 30px, #1A353C 0 60px, #84B9C7);
+            translate: 127q 0;
+            margin: 0 0 0-10;
+            -webkit-box-reflect: left 148q
+        }
+    }
+</style>
+
+<!-- Method 2  -->
+
+<style>
+    * {
+        background: #84B9C7;
+
+        * {
+            margin: 150 40 46 240;
+            color: 1A353C;
+            background: radial-gradient(1q at 50%0%, #84B9C7 30px, #1A353C 0 60px, #84B9C7)no-repeat;
+            box-shadow: inset 30px 0, 0-20px#84B9C7, 0-50px, -50px -20px#84B9C7, -50px -50px;
+            -webkit-box-reflect: left 85q
+        }
+    }
+</style>
+<!-- Method 3 -->
+
+<p></p>
+<style>
+    * {
+        background: #84B9C7;
+        border: solid#1A353C;
+        --w: 30 0 0;
+        border-width: var(--w);
+        margin: 25%40;
+
+        * {
+            --w: 0 30;
+            margin: 20 90-54;
+
+            p {
+                --w: 0 30 30;
+                border-radius: 0 0 1in 1in;
+                padding: 15 30;
+                margin: 0 80;
+                -webkit-box-reflect: left 85q
+            }
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #84B9C7;
+        border: solid#1A353C;
+        --w: 30 0 0;
+        border-width: var(--w);
+        margin: 25%40;
+
+        * {
+            --w: 0 30;
+            margin: 20 90-54;
+
+            p {
+                --w: 0 30 30;
+                border-radius: 0 0 1in 1in;
+                padding: 15 30;
+                margin: 0 80;
+
+                +p {
+                    margin: -60 120 0-120
+                }
+            }
+        }
+    }
+</style>
