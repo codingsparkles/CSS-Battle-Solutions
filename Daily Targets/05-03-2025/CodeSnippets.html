@@ -1,0 +1,51 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1-->
+<a></a>
+<a></a>
+<style>
+    * {
+        background: #6255AA;
+
+        body {
+            margin: 0 10%150;
+            -webkit-box-reflect: below;
+
+            * {
+                background: #D96E9F;
+                position: fixed;
+                padding: 60 61;
+                clip-path: polygon(77%0, 100%30%, 100%100%, 1%100%);
+                left: 8;
+
+                +a {
+                    left: 190;
+                    scale: -1 1
+                }
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p><a></a><a></a></p>
+<style>
+    * {
+        background: #6255AA
+    }
+
+    p {
+        -webkit-box-reflect: below 301q;
+
+        * {
+            +a {
+                left: 124;
+                scale: -1 1;
+            }
+            background:linear-gradient(90deg, #D96E9F 65%, #0000 0);
+            position:fixed;
+            padding:60 94;
+            margin:-8 40;
+            clip-path:polygon(50%0, 100%100%, 1%100%)
+        }
+    }
+</style>
