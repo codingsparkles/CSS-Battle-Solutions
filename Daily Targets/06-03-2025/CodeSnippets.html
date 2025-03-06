@@ -1,0 +1,53 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a></a>
+<a></a>
+<style>
+    & {
+        background: #DE6B67;
+        color: #E8AD6D;
+        box-shadow: 20px 0, -20px 0, 60px 0#DE6B67, -60px 0#DE6B67, 0 0 0 212q;
+        margin: 0 145;
+
+        a {
+            +a {
+                top: 118
+            }
+
+            padding:15 20;
+            background:#E8AD6D;
+            position:fixed;
+            margin:72 27;
+            clip-path:polygon(50%0, 100%50%, 50%100%, 0%50%)
+        }
+    }
+</style>
+
+<!-- Method 2-->
+<a></a>
+<a></a>
+<style>
+    * {
+        background: #E8AD6D;
+        border-inline: 43q solid#DE6B67;
+        margin: 0 85;
+
+        body {
+            background: #DE6B67;
+            margin: 0 20;
+
+            * {
+                +a {
+                    top: 110
+                }
+
+                padding:15 20;
+                position:fixed;
+                border:none;
+                margin:80-5;
+                clip-path:polygon(50%0, 100%50%, 50%100%, 0%50%)
+            }
+        }
+    }
+</style>
