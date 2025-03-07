@@ -1,0 +1,29 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        background: #FFEFF7;
+
+        * {
+            background: radial-gradient(1q at 100%, #000 53q, #0000), linear-gradient(90deg, #226AA9 56.8%, #DEB467 0);
+            margin: 70 145 70 0;
+            clip-path: polygon(0%0, 57%0, 100%50%, 57%100%, 0%100%)
+        }
+    }
+</style>
+
+<!-- Method 2-->
+<style>
+    * {
+        background: #FFEFF7;
+        margin: 70 35 70 145;
+        box-shadow: -212q 0#226AA9;
+
+        * {
+            background: radial-gradient(1q, #000 53q, #DEB467);
+            margin: 0;
+            clip-path: polygon(0 0, 0%100%, 50%50%)
+        }
+    }
+</style>
