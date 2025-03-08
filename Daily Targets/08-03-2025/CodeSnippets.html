@@ -1,0 +1,38 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a></a>
+<style>
+    * {
+        background: #498488;
+
+        +* {
+            background: #D99795;
+            margin: 100 80 80;
+            box-shadow: 0-21q#D9D9D9;
+
+            a {
+                padding: 60;
+                border-radius: 50%;
+                position: fixed;
+                margin: 60-60;
+                box-shadow: 254q 0#498488
+            }
+        }
+    }
+</style>
+
+<!-- Method 2-->
+
+<style>
+    * {
+        background: #498488;
+
+        * {
+            background: radial-gradient(1q at 0%100%, #0000 60px, #D99795);
+            margin: 25%50%80 80;
+            box-shadow: 0-21q#D9D9D9;
+            -webkit-box-reflect: right
+        }
+    }
+</style>
