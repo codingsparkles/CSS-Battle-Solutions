@@ -1,0 +1,52 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<p a></p>
+<style>
+    * {
+        background: #EAC049;
+        border: 22q solid#51A499;
+        margin: 60 110;
+
+        * {
+            margin: -60 0 140 140;
+            padding: 10;
+
+            * {
+                +p {
+                    left: 100
+                }
+
+                position:fixed;
+                margin:170-30
+            }
+
+            [a] {
+                top: -150
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+    * {
+        background: #EAC049;
+        border: 20px solid#51A499;
+        margin: 60 110;
+
+        * {
+            margin: -60 0 140 140;
+            padding: 10;
+            -webkit-box-reflect: below 140px;
+
+            * {
+                position: fixed;
+                margin: -30-230
+            }
+        }
+    }
+</style>
