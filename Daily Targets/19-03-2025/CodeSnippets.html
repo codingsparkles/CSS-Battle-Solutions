@@ -1,0 +1,50 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<style>
+    * {
+        background: #66DBB8;
+        border: 32q solid#1A353C;
+        margin: -30 85;
+
+        +* {
+            margin: 90-75 90 125;
+            border-radius: 1in;
+            -webkit-box-reflect: left 85q;
+
+            * {
+                margin: 0-100;
+                position: fixed;
+                scale: .5;
+                padding: 0 20
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #66DBB8;
+        border: 32q solid#1A353C;
+        margin: -30 85 135;
+
+        * {
+            margin: 135-30-195;
+
+            * {
+                +p {
+                    left: 315
+                }
+
+                position:fixed;
+                padding:30;
+                border-radius:1in;
+                margin:-75
+            }
+        }
+    }
+</style>
