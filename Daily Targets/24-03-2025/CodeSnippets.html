@@ -1,0 +1,76 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        background: #E3516E;
+        color: E3516E;
+        margin: 110;
+        box-shadow: 0 21q, 0 -21q, 0 42q#66284A, 0 63q, 0-42q#66284A, 0-63q, 0 0 0 85q#66284A;
+
+        * {
+            margin: 0-20;
+            box-shadow: 21q 0#66284A, 42q 0, -21q 0#66284A, -42q 0
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<style>
+    & {
+        background: #E3516E;
+        margin: 90;
+        color: 66284A;
+        box-shadow: 0 0 0 21q, 0 0 0 42q#E3516E, 0 0 0 63q;
+
+        * {
+            border-block: 64q solid;
+            margin: -40-40-40 200;
+            -webkit-box-reflect: left 180px
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<style>
+    * {
+        background: #E3516E;
+        color: E3516E;
+        margin: 110;
+        --a: #66284A;
+        box-shadow: 0 21q, 0-21q, 0 42q#66284A, 0 63q, 0-42q#66284A, 0-63q, 0 0 0 85q var(--a);
+
+        * {
+            margin: -50 50;
+            rotate: 90deg;
+            --a: #0000
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+
+<p></p>
+<style>
+    * {
+        --a: 0;
+        background: #66284A;
+        border: 32q solid#E3516E;
+
+        * {
+            border-width: 20 0 60;
+            margin: 20 80 120;
+            -webkit-box-reflect: below var(--a)
+        }
+
+        p {
+            position: fixed;
+            rotate: 90deg;
+            padding: 10 40;
+            margin: 30 150;
+            --a: 106q
+        }
+    }
+</style>
