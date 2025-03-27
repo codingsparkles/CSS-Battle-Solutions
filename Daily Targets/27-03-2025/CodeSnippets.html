@@ -1,0 +1,141 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a></a><b></b>
+<c></c>
+<style>
+    * {
+        background: #282828;
+
+        +* {
+            margin: 80 130;
+            background: #fff;
+            border-radius: 21q;
+
+            * {
+                position: fixed;
+                z-index: -1
+            }
+        }
+
+        a {
+            background: #F2A73B;
+            padding: 33;
+            margin: 37 100;
+            rotate: 45deg
+        }
+
+        b {
+            background: #EA3323;
+            color: #EA3323;
+            padding: 5;
+            margin: -5 30;
+            box-shadow: 25px 0 0 5px, 60px 0 0 10px
+        }
+
+        c {
+            padding: 15 7.5;
+            background: #282828;
+            margin: 30 105;
+            z-index: 2;
+            border-radius: 50%
+        }
+    }
+</style>
+
+<!-- Method 2 - Optimized version of Method 1-->
+
+<a></a><b></b>
+<c></c>
+<style>
+    * {
+        --b: #282828;
+        background: var(--b);
+
+        body {
+            margin: 80 130;
+            --b: #fff;
+            border-radius: 21q;
+
+            * {
+                position: fixed
+            }
+        }
+
+        a,
+        c {
+            border-radius: 50%
+        }
+
+        a {
+            padding: 15 7.5;
+            margin: 30 105
+        }
+
+        b,
+        c {
+            z-index: -1
+        }
+
+        b {
+            --b: #F2A73B;
+            padding: 33;
+            margin: 37 100;
+            rotate: 45deg
+        }
+
+        c {
+            --b: #EA3323;
+            color: EA3323;
+            padding: 5;
+            margin: -5 30;
+            box-shadow: 25px 0 0 5px, 63q 0 0 10q
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<a></a><b></b>
+<c>
+    <d></d>
+</c>
+<style>
+    * {
+        position: fixed;
+        --b: #282828;
+        background: var(--b)
+    }
+
+    a,
+    d {
+        border-radius: 50%
+    }
+
+    a {
+        --b: #EA3323;
+        color: EA3323;
+        padding: 5;
+        margin: 67 152;
+        box-shadow: 25px 0 0 5px, 63q 0 0 10q
+    }
+
+    b {
+        --b: #F2A73B;
+        padding: 33;
+        margin: 109 222;
+        rotate: 45deg
+    }
+
+    c {
+        --b: #fff;
+        padding: 70;
+        margin: 72 122;
+        border-radius: 21q
+    }
+
+    d {
+        padding: 15 7.5;
+        margin: -40 35
+    }
+</style>
