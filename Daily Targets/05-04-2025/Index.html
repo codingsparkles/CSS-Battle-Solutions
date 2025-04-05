@@ -4,7 +4,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>CSS Battle Daily Target Solution - April 4, 2025</title>
+    <title>CSS Battle Daily Target Solution - April 5, 2025</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
         * {
@@ -15,7 +15,7 @@
 
         body {
             min-height: 100vh;
-            background: radial-gradient(#FFEEEE, #56AE68);
+            background: radial-gradient(#DE6B67, #fff, #E8AD6D);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -24,27 +24,32 @@
         .wrapper {
             height: 300px;
             width: 400px;
-            background: #FFEEEE;
+            background: #E8AD6D;
             position: relative;
 
             * {
                 position: absolute;
-                height: 80px;
-                width: 180px;
+                background: #E8AD6D;
             }
         }
 
         .container {
-            border: 32q solid#56AE68;
-            margin: 45px 80px 115px;
-            border-radius: 0 1in 1in 0;
+            border: 64q solid#DE6B67;
+            margin: 75px 125px;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
         }
 
         a {
-            border: solid#56AE68;
-            margin: 80px -30px -100px;
-            border-width: 30px 30px 0;
-            border-radius: 0 75q 0 0;
+            border-block: 96q solid#DE6B67;
+            padding: 10px;
+            margin: -85px 5px;
+            rotate: 45deg;
+        }
+
+        a+a {
+            rotate: -45deg
         }
     </style>
 </head>
@@ -52,7 +57,7 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <a></a>
+            <a><a></a></a>
         </div>
     </div>
 </body>
