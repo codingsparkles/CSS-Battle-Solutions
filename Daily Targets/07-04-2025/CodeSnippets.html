@@ -1,0 +1,77 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a></a>
+<style>
+    * {
+        background: #FCEBEB;
+        color: #8E2C88;
+        border-inline: 24px solid;
+        margin: 162 56 114;
+
+        * {
+            margin: 0 64;
+
+            * {
+                position: fixed;
+                height: 144;
+                margin: -84 8;
+                scale: .5;
+                box-shadow: 176px 0, -176px 0
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<style>
+    * {
+        --a: #FCEBEB;
+        background: repeating-linear-gradient(90deg, #8E2C88 0 24px, #0000 0 88px)no-repeat var(--a);
+        margin: 162 56 114;
+
+        * {
+            margin: -48 44 0;
+            --a:
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+<style>
+    * {
+        --a: 88px;
+        background: repeating-linear-gradient(90deg, #8E2C88 0 24px, #0000 0 var(--a))no-repeat#FCEBEB;
+        margin: 114 25%162;
+
+        * {
+            margin: 48-44-48;
+            --a: 44px
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+<p></p>
+<style>
+    * {
+        background: #FCEBEB;
+
+        * {
+            position: fixed;
+            padding: 36 12;
+            background: #8E2C88;
+            margin: 114 100;
+            color: #8E2C88;
+            --a: 0 0;
+            box-shadow: 88px 0, 176px 0, var(--a);
+
+            p {
+                padding: 12;
+                margin: 12-56;
+                --a: 264px 0
+            }
+        }
+    }
+</style>
