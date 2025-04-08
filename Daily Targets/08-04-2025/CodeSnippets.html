@@ -1,0 +1,87 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<p></p>
+<p a></p>
+<p b></p>
+<style>
+    & {
+        background: #5A9F48;
+        box-shadow: 0 0 0 3in#14576B;
+        margin: 80 130;
+
+        p {
+            +p {
+                rotate: 90deg
+            }
+
+            position:fixed;
+            background:#0000;
+            padding:118 30;
+            border-block:20px solid#5A9F48;
+            margin:-76 32
+        }
+
+        [a],
+        [b] {
+            padding: 84 50;
+            margin: -42 12
+        }
+
+        [b] {
+            rotate: 0deg
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<style>
+    & {
+        background: #5A9F48;
+        color: #5A9F48;
+        margin: 80 130;
+        box-shadow: 0 0 0 15q#14576B, 0-57q 0-21q, 0 57q 0-21q, -57q 0 0-21q, 57q 0 0-21q, 0 0 0 48px#14576B, 0 114q 0-42q, 0-114q 0-42q, 114q 0 0-42q, -114q 0 0-42q, 0 0 0 3in#14576B
+    }
+</style>
+
+<!-- Method 3 -->
+<style>
+    & {
+        background: #5A9F48;
+        color: 5A9F48;
+        margin: 25%150;
+        box-shadow: 0 0 0 21q, 0 0 0 36q#14576B, 0 57q, 0-57q, 57q 0, -57q 0, 0 0 0 72q#14576B, 0 114q 0-21q, 0-114q 0-21q, 114q 0 0-21q, -114q 0 0-21q, 0 0 0 3in#14576B
+    }
+</style>
+
+<!-- Method 4 -->
+<p></p>
+<p></p>
+<style>
+    & {
+        background: #14576B;
+
+        p {
+            +p {
+                rotate: 90deg
+            }
+
+            background:#5A9F48;
+            position:fixed;
+            padding:50;
+            color:5A9F48;
+            margin:92 142;
+            box-shadow:0 0 0 21q,
+            0 36q#14576B,
+            0 57q,
+            0 72q#14576B,
+            0 114q 0-21q,
+            0-36q#14576B,
+            0-57q,
+            0-72q#14576B,
+            0-114q 0-21q
+        }
+    }
+</style>
