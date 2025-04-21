@@ -1,0 +1,51 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #4C455B;
+
+        body {
+            border-radius: 50%;
+            background: linear-gradient(#D96C7B 50%, #8AB8B6 0);
+            margin: 70 120
+        }
+
+        p {
+            +p {
+                color: #8AB8B6;
+                scale: -1;
+                margin: 80 160
+            }
+
+            color:#D96C7B;
+            position:fixed;
+            border:solid;
+            border-width:60 60 0 0;
+            padding:30;
+            margin:-40-120
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<style>
+    & {
+        background: #4C455B;
+        border: solid#D96C7B;
+        border-width: 60 60 0 0;
+        margin: 30 70%150 0;
+        box-shadow: 360q 63q#4C455B, 280px 127q#8AB8B6;
+
+        * {
+            background: linear-gradient(#D96C7B 50%, #8AB8B6 0);
+            position: fixed;
+            padding: 80;
+            border-radius: 50%;
+            margin: -20 120
+        }
+    }
+</style>
