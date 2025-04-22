@@ -1,0 +1,97 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<style>
+    * {
+        background: #5A9F48;
+        border: 45px solid#2A2753;
+        margin: 55 70;
+
+        * {
+            margin: -40 30;
+            border-width: 40;
+
+            * {
+                border-width: 101 130;
+                border-color: #0000#5A9F48#5A9F48;
+                margin: -1-116;
+                background-clip: content-box;
+                box-shadow: 0-45px#5A9F48
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #5A9F48;
+
+        p {
+            background: linear-gradient(90deg, #2A2753 0 45px, #0000 0 75px, #2A2753 0);
+            margin: 92 62;
+            clip-path: polygon(0%0, 100%0%, 100%100%);
+            position: fixed;
+            padding: 44 57.5
+        }
+
+        p+p {
+            scale: -1 1;
+            left: 153
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<p></p>
+<style>
+    * {
+        --w: 0 45;
+        background: #5A9F48;
+        border: solid#2A2753;
+        border-width: var(--w);
+        margin: 25%70;
+
+        * {
+            --w: 0 40;
+            margin: 0 30;
+
+            * {
+                --w: 100 130;
+                border-color: #0000#5A9F48#5A9F48;
+                background-clip: content-box;
+                margin: 0-115
+            }
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+
+<a></a>
+<a></a>
+<style>
+    * {
+        background: #5A9F48;
+
+        body {
+            margin: 100 70;
+            clip-path: polygon(100%0, 0%0, 50%100%);
+
+            a {
+                +a {
+                    border-width: 40;
+                    left: 145;
+                    padding: 44 15
+                }
+
+                border-inline:45px solid#2A2753;
+                padding:85;
+                position:fixed
+            }
+        }
+    }
+</style>
