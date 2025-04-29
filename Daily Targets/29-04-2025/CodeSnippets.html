@@ -1,0 +1,63 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        background: #243D83;
+        border-radius: 2in
+    }
+
+    & {
+        border-radius: 2in;
+        box-shadow: 0 0 0 2in#F7EC7D;
+        margin: 10 140;
+
+        * {
+            margin: 80-80 80 20;
+            background: radial-gradient(1q at 120px, #fff 30px, #243D83);
+            -webkit-box-reflect: left -80px
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<style>
+    * {
+        background: #243D83;
+        border-radius: 2in;
+        box-shadow: 0 0 0 2in#F7EC7D;
+        margin: 10 140;
+
+        * {
+            color: 243D83;
+            box-shadow: 85q 0#fff, 85q 0 0 30px, 65px 0 0 30px;
+            margin: 110 30;
+            -webkit-box-reflect: left -60px
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+<p></p>
+<style>
+    * {
+        background: #243D83;
+        border-radius: 2in
+    }
+
+    & {
+        box-shadow: 0 0 0 2in#F7EC7D;
+        margin: 10 140;
+
+        * {
+            margin: 80-80;
+
+            * {
+                padding: 30;
+                position: fixed;
+                margin: 30 110;
+                box-shadow: 85q 0#fff, -85q 0#fff
+            }
+        }
+    }
+</style>
