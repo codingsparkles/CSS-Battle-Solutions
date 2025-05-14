@@ -1,40 +1,129 @@
 <!-- Here added closing tags to format the code properly -->
 <!-- Method 1 -->
-<a><b></b></a>
+
+<p></p>
 <style>
     * {
-        background: #343400;
-
-        +*,
-        a {
-            border-radius: 50%
-        }
-
-        +*,
-        b {
-            background: #469DBA
-        }
+        background: #243D83;
 
         +* {
-            margin: 70 75;
+            background: #5AA4B7;
+            margin: 30 120;
+            border-radius: 0 0 2in 2in;
+            clip-path: polygon(50%0, 100%33%, 100%100%, 0%100%, 0%33%);
         }
 
-        a,
-        b {
-            padding: 15;
-            position: fixed
-        }
-
-        a {
-            margin: 65 110;
-            color: 343400;
-            box-shadow: 74q 0, -74q 0
-        }
-
-        b {
-            margin: 30-110
+        p {
+            padding: 40;
+            position: fixed;
+            border-radius: 2in;
+            margin: 80-40;
+            box-shadow: 160px 0#243D83
         }
     }
 </style>
 
+
 <!-- Method 2 -->
+
+<p></p>
+<style>
+    * {
+        background: #243D83;
+
+        +* {
+            border-radius: 50%;
+            color: #243D83;
+            margin: 110 60%110 80;
+            box-shadow: 169q 0, 80px 42q 0 40px#5AA4B7
+        }
+
+        p {
+            padding: 60;
+            rotate: 45deg;
+            background: #5AA4B7;
+            margin: -55 60;
+            position: fixed;
+            z-index: -1
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<p></p>
+<style>
+    * {
+        background: #243D83;
+
+        * {
+            background: #5AA4B7
+        }
+
+        +* {
+            border-radius: 50%;
+            color: 243D83;
+            margin: 110 160;
+            box-shadow: 85q 0, -85q 0, 0 40px 0 40px#5AA4B7
+        }
+
+        p {
+            padding: 60;
+            rotate: 45deg;
+            margin: -55-20;
+            position: fixed;
+            z-index: -1
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+
+<p></p>
+<style>
+    * {
+        background: #243D83;
+
+        * {
+            border-radius: 2in
+        }
+
+        +* {
+            background: #5AA4B7;
+            margin: 30 120;
+            clip-path: polygon(50%0, 100%33%, 100%100%, 0%100%, 0%33%);
+
+            p {
+                padding: 40;
+                position: fixed;
+                margin: 80-40;
+                box-shadow: 169q 0#243D83
+            }
+        }
+    }
+</style>
+
+<!-- Method 5 -->
+
+<p></p>
+<style>
+    * {
+        background: #243D83;
+
+        * {
+            border-radius: 2in
+        }
+
+        +* {
+            background: conic-gradient(at 50%0, #0000 0 135deg, #5AA4B7 0 225deg, #0000 0);
+            margin: 30 120;
+
+            p {
+                padding: 40;
+                position: fixed;
+                margin: 80-40;
+                box-shadow: 169q 0#243D83
+            }
+        }
+    }
+</style>
