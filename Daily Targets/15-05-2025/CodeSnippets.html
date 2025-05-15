@@ -1,0 +1,49 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<style>
+    * {
+        --s: 0 0 2in#F4DA64;
+        background: #243D83;
+        box-shadow: 0-11q#D95F5B, 0 var(--s);
+        margin: 130 90;
+
+        * {
+            margin: -90 90;
+            --s: 0 0 11q#F4DA64
+        }
+
+        p {
+            padding: 20;
+            margin: 90 0;
+            position: fixed;
+            --s: 11q#D95F5B
+        }
+    }
+</style>
+
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+    * {
+        --a: 2in;
+        background: #243D83;
+        color: D95F5B;
+        box-shadow: 0-11q, 0 0 0 var(--a)#F4DA64;
+        margin: 130 90;
+
+        * {
+            margin: -90 90;
+            --a: 11q;
+
+            p {
+                padding: 5;
+                margin: 0;
+                box-shadow: 0 85q, 0 138q
+            }
+        }
+    }
+</style>
