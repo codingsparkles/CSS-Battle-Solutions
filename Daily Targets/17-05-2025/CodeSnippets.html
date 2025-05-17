@@ -1,0 +1,48 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<style>
+    * {
+        background: #51A499;
+        --a: below;
+        -webkit-box-reflect: var(--a);
+
+        body {
+            background: #282828;
+            margin: 50 100 150
+        }
+
+        p {
+            border: solid#EAC049;
+            border-width: 0 0 40 40;
+            margin: 0 120;
+            padding: 20;
+            --a: left 40px
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+    * {
+        background: #51A499;
+        color: EAC049;
+        border-block: 40px solid;
+        margin: 90 100;
+
+        +* {
+            margin: -40 0;
+            rotate: 90deg
+        }
+
+        p {
+            border-width: 20;
+            color: 282828;
+            position: fixed;
+            width: 100%;
+            margin: 0
+        }
+    }
+</style>
