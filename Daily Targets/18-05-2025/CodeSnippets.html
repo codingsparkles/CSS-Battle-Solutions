@@ -1,0 +1,32 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        --b: #F3EAD2;
+        background: var(--b);
+
+        * {
+            --b: #C0D6E7;
+            margin: 115 130
+        }
+
+        p {
+            +p {
+                --b: #4C455B;
+                rotate: -45deg;
+                left: 60
+            }
+
+            position:fixed;
+            padding:75 25;
+            --b:#D96C7B;
+            rotate:45deg;
+            margin:-5 80
+        }
+    }
+</style>
+
+<!-- Method 2 -->
