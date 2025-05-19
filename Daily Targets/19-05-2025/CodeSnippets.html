@@ -1,0 +1,124 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<style>
+    * {
+        border: 43q solid
+    }
+
+    & {
+        background: #BDE4C1;
+        color: 4C455B;
+        margin: 60 40%200;
+        border-radius: 50%;
+        box-shadow: 127q 106q#D95F5B, -127q 106q#D95F5B;
+
+        * {
+            position: fixed;
+            height: 120;
+            margin: 0-40;
+            color: D95F5B;
+            box-shadow: 127q -106q#4C455B, -127q -106q#4C455B
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<style>
+    * {
+        --b: #BDE4C1;
+        background: var(--b);
+
+        +* {
+            --b: #4C455B;
+            margin: 60 160 160;
+            border-radius: 50%;
+            box-shadow: 127q 106q, -127q 106q;
+            color: D95F5B
+        }
+
+        p {
+            position: fixed;
+            padding: 100 40;
+            --b: #D95F5B;
+            margin: 40 0;
+            color: 4C455B;
+            box-shadow: 127q -106q, -127q -106q
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+<style>
+    * {
+        --a: #4C455B 40px, #D95F5B 0;
+        background: linear-gradient(var(--a));
+        border-radius: 2in;
+        margin: 60 160-40;
+        box-shadow: 0 0 0 2in#BDE4C1;
+
+        * {
+            box-shadow: 0 0;
+            margin: -100-120 100 120;
+            -webkit-box-reflect: right 160px;
+            --a: #D95F5B 40px, #4C455B 0;
+            scale: -1
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #BDE4C1;
+
+        * {
+            --a: #4C455B 40px, #D95F5B 0;
+            position: fixed;
+            background: linear-gradient(var(--a));
+            padding: 35%40;
+            margin: 60 160;
+            color: 4C455B;
+            border-radius: 2in;
+
+            p {
+                scale: -1;
+                margin: -240 80;
+                --a: #D95F5B 40px, #4C455B 0;
+
+                +p {
+                    left: -40
+                }
+            }
+        }
+    }
+</style>
+
+<!-- Method 5 -->
+<style>
+    * {
+        --b: 0 0 0 2in#BDE4C1;
+        box-shadow: -127q -106q, 127q -106q, var(--b)
+    }
+
+    & {
+        background: #4C455B;
+        border-radius: 2in;
+        margin: 60 160-40;
+        color: D95F5B;
+
+        * {
+            position: fixed;
+            background: #D95F5B;
+            padding: 25%40;
+            margin: 40 0;
+            color: 4C455B;
+            --b: 0 0
+        }
+    }
+</style>
