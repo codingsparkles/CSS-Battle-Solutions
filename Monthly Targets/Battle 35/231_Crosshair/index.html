@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #35 - #231 Crosshair</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#F8B140, #CF6939);
+      display: grid;
+      place-items: center;
+
+      * {
+        background: radial-gradient(var(--a), #2F434E);
+      }
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      position: relative;
+      --a: 1q, #CF6939 42q;
+    }
+
+    p {
+      position: absolute;
+      padding: 30px;
+      margin: 35px 170px;
+      --a: 1q at 50%67%, #F8B140 43q;
+      -webkit-box-reflect: below 116q;
+    }
+
+    p+p {
+      rotate: 90deg;
+      margin: 120px 252px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <p></p>
+    <p></p>
+  </div>
+</body>
+
+</html>
