@@ -1,0 +1,130 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+
+<a><a></a></a><b>
+    <c>
+        <d></d>
+    </c>
+</b>
+<style>
+    * {
+        background: #5AA4B7;
+
+        * {
+            position: fixed;
+            background: #000;
+            padding: 10 40;
+            border-radius: 1in;
+            margin: 140 160
+        }
+
+        a {
+            +a {
+                rotate: -45deg
+            }
+
+            rotate:45deg;
+            margin:-10-40
+        }
+
+        b {
+            rotate: 90deg;
+            margin: -10-40
+        }
+
+        c,
+        d {
+            background: #0000;
+            padding: 10 100;
+            margin: -10-100;
+            box-shadow: 0 70px, 0-70px
+        }
+
+        d {
+            rotate: 90deg;
+            margin: -10-100
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<p a></p>
+<p b></p>
+<p c></p>
+<style>
+    *:not(p) {
+        box-shadow: 0 74q, 0-74q
+    }
+
+    * {
+        background: #5AA4B7;
+        border-radius: 1in;
+        margin: 140 100;
+
+        * {
+            margin: 0;
+            rotate: 90deg;
+            background: #0000;
+
+            p {
+                position: fixed;
+                padding: 10 40;
+                background: #000;
+                margin: 0 60
+            }
+
+            [a] {
+                rotate: 0deg
+            }
+
+            [b] {
+                rotate: 45deg
+            }
+
+            [c] {
+                rotate: -45deg
+            }
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<p>
+<p><a><b></b></a></p>
+</p>
+<style>
+    *:not(a, b) {
+        box-shadow: 0 74q, 0-74q
+    }
+
+    * {
+        background: #5AA4B7;
+        border-radius: 1in;
+        margin: 35%100;
+
+        +*,
+        b {
+            margin: 0;
+            rotate: 90deg;
+
+            * {
+                position: fixed;
+                padding: 10 40;
+                background: #000;
+                margin: 0 60
+            }
+
+            a,
+            b {
+                margin: -10-40
+            }
+
+            a {
+                rotate: 45deg
+            }
+        }
+    }
+</style>
