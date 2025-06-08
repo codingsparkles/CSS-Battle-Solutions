@@ -1,0 +1,136 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1-->
+<p>
+<p></p>
+</p>
+<style>
+    * {
+        background: #F2EAA8;
+
+        * {
+            background: #EE7667
+        }
+
+        body {
+            margin: 50 100;
+            border-radius: 50%
+        }
+
+        p {
+            position: fixed;
+            padding: 40 10;
+            margin: 0 90;
+            box-shadow: 0 0 0 20px#F2EAA8;
+            -webkit-box-reflect: below 40px
+        }
+
+        +p {
+            rotate: 90deg;
+            margin: 65 155;
+            padding: 35 10;
+            box-shadow: 0 0 0 10px#F2EAA8;
+            -webkit-box-reflect: below 60px
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #F2EAA8;
+
+        body {
+            margin: 50 100;
+            border-radius: 50%;
+            background: #EE7667
+        }
+
+        p {
+            position: fixed;
+            height: 20;
+            width: 60;
+            margin: 90 0;
+            color: EE7667;
+            border-inline: 75q solid;
+            --s: 0 0 0 11q;
+            box-shadow: var(--s)#F2EAA8;
+
+            +p {
+                rotate: 90deg;
+                width: 40;
+                left: 110;
+                --s: 11q 0, -11q 0, 0 0 0 21q
+            }
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<p></p>
+<p><a></a></p>
+<style>
+    *,
+    a {
+        background: #F2EAA8
+    }
+
+    *>* {
+        background: #EE7667
+    }
+
+    body {
+        margin: 50 100;
+        border-radius: 50%;
+
+        * {
+            position: fixed
+        }
+    }
+
+    p {
+        padding: 100 10;
+        margin: 0 90;
+        box-shadow: 0 0 0 20px#F2EAA8;
+
+        +p {
+            rotate: 90deg;
+            box-shadow: 0 0 0 11q#F2EAA8
+        }
+
+        a {
+            padding: 30 10;
+            margin: -30-10
+        }
+    }
+</style>
+
+<!-- Method 4 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        background: radial-gradient(1q, #EE7667 106q, #F2EAA8);
+
+        * {
+            background: #EE7667;
+            margin: 50 190;
+            --s: 21q;
+            box-shadow: 0 0 0 var(--s)#F2EAA8;
+
+            * {
+                padding: 10 100;
+                margin: 90-90;
+                position: fixed;
+                --s: 11q;
+
+                +p {
+                    padding: 0 20;
+                    margin: 100-10
+                }
+            }
+        }
+    }
+</style>
