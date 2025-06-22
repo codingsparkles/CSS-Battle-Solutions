@@ -1,0 +1,97 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1-->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #48BF7D;
+
+        *:not(p) {
+            rotate: 45deg
+        }
+
+        +* {
+            background: #394257;
+            margin: 115 165;
+
+            p {
+                position: fixed;
+                margin: -35 35;
+                padding: 35;
+                border-radius: 11q;
+
+                +* {
+                    border-radius: 0;
+                    margin: -18 18;
+                    clip-path: polygon(100%0, 0%0, 100%100%)
+                }
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<a><b></b></a>
+<style>
+    * {
+        background: #48BF7D;
+
+        * {
+            position: fixed;
+            padding: 35;
+            margin: 115 165
+        }
+
+        *:not(a, b) {
+            rotate: 45deg
+        }
+
+        +*,
+        b {
+            background: #394257
+        }
+
+        a {
+            border-radius: 11q;
+            margin: -70 0
+        }
+
+        b {
+            margin: -18-52;
+            clip-path: polygon(100%0, 0%0, 100%100%)
+        }
+    }
+</style>
+
+/* Method 3 */
+<p><a></a></p>
+<p></p>
+<style>
+    *,
+    a {
+        background: #48BF7D;
+
+        * {
+            position: fixed
+        }
+
+        p {
+            a {
+                padding: 30;
+                border-radius: 11q;
+                margin: -60 0
+            }
+
+            border:38q solid#394257;
+            rotate:45deg;
+            margin:107 157;
+
+            +p {
+                left: 33;
+                clip-path: polygon(100%0, 0%0, 100%100%)
+            }
+        }
+    }
+</style>
