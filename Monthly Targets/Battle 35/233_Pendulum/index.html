@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #35 - #233 Pendulum</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#F4DA64, #469DBA);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #F4DA64;
+      position: relative;
+      overflow: hidden;
+
+      * {
+        position: absolute;
+      }
+    }
+
+    .parent {
+      background: #469DBA;
+      margin: 0 187px;
+      width: 20px;
+      height: 300px
+    }
+
+    a {
+      background: #469DBA;
+      padding: 25px 50px;
+      margin: 175px -37px
+    }
+
+    p {
+      padding: 37px 75px;
+      border-radius: 2in 2in 0 0;
+      border: solid#469DBA;
+      border-width: 25px 25px 0 25px;
+      margin: 126px -87px;
+      background: #0000;
+    }
+
+    p+p {
+      scale: -1;
+      padding: 25px 50px;
+      margin: 225px -62px;
+      box-shadow: 0 -10px#F4DA64
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <a></a>
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+</body>
+
+</html>

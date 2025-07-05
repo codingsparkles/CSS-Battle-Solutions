@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #35 - #229 Flower</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#D95362, #F4DCBF);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #F4DCBF;
+      position: relative;
+
+      * {
+        background: #D95362;
+        position: absolute;
+      }
+    }
+
+    .parent {
+      background: #D95362;
+      margin: 135px 185px;
+      height: 30px;
+      width: 30px;
+    }
+
+    p {
+      padding: 60px 30px;
+      border-radius: 0 2in;
+      box-shadow: 95q 159q#D95362;
+      margin: -120px -60px
+    }
+
+    p+p {
+      left: 90px;
+      scale: -1 1
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+</body>
+
+</html>

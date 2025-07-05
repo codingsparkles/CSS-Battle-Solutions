@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #35 - #234 Pieces</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#1FBCB5, #FFB43D);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #1FBCB5;
+      position: relative;
+
+      * {
+        position: absolute;
+      }
+    }
+
+    p {
+      background: conic-gradient(#0000 25%, #1FBCB5 0 50%, #0000 0), radial-gradient(1q, #0000 20px, #074760 0 40px, #FFB43D 0 60px, #F9F8F4 0);
+      border-radius: 2in;
+      margin: 70px 120px;
+      height: 160px;
+      width: 160px;
+      z-index: 2;
+    }
+
+    a {
+      border-radius: 2in;
+      --a: #1FBCB5 50%, #F9F8F4 0;
+      padding: 20px;
+      background: linear-gradient(var(--a));
+      margin: 130px 180px;
+      z-index: 3;
+    }
+
+    a+a {
+      --a: 90deg, #074760 50%, #F9F8F4 0;
+      padding: 40px 80px;
+      border-radius: 0;
+      margin: 150px 120px;
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <a></a>
+    <a></a>
+    <p></p>
+  </div>
+</body>
+
+</html>
