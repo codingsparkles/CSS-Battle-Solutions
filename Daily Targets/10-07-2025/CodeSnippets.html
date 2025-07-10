@@ -1,0 +1,32 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        --r: 43q 0 0 32q;
+        --w: 40 0 40 40;
+        background: #7AA70A;
+        border: solid#fff;
+        border-width: var(--w);
+        border-radius: var(--r);
+        margin: 40 175 140 115;
+
+        body {
+            --r: 0 1in 1in 50px;
+            margin: 40-60-140 0;
+            --w: 40 40 40 0
+        }
+
+        p {
+            --w: 0 20 40 40;
+            --r: 0 0 43q 43q;
+            margin: 60 0 0-40;
+
+            +p {
+                scale: -1;
+                margin: -220-40
+            }
+        }
+    }
+</style>
