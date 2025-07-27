@@ -1,0 +1,34 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<p a></p>
+<style>
+    * {
+        background: #DC9DA6;
+
+        body {
+            border-radius: 2in;
+            border: 32q solid#6E3C3C;
+            margin: 25%150;
+        }
+
+        p {
+            --d: 45deg;
+            background: #6E3C3C;
+            padding: 100 10;
+            position: fixed;
+            margin: -80 10;
+            rotate: var(--d);
+
+            +p {
+                --d: 90deg;
+                z-index: -1
+            }
+        }
+
+        [a] {
+            --d: 0deg
+        }
+    }
+</style>

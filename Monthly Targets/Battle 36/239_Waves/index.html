@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #36 - #239 Waves</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#48BF7D, #CEEDFF);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      background: #CEEDFF;
+      position: relative;
+      overflow: hidden;
+
+      * {
+        position: absolute;
+        color: #48BF7D;
+      }
+    }
+
+    .parent,
+    p {
+      border-radius: 0 0 0 130px;
+      border: solid;
+      border-width: 0 0 30px 30px;
+      margin: 170px 0 0 5px;
+      height: 100px;
+      width: 365px
+    }
+
+    p {
+      margin: 0 0 -30px 100px;
+    }
+
+    p+p {
+      left: 120px
+    }
+
+    a {
+      color: #48BF7D;
+      background: #48BF7D;
+      margin: -15px -30px;
+      border-radius: 2in;
+      box-shadow: -120px 0, -250px 0;
+      padding: 15px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <p></p>
+      <p>
+        <a></a>
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>

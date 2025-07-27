@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>CSS Battle Daily Target Solution - Battle #36 - #236 Concentrate</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(#F8B140, #CF6939, #2F434E);
+      display: grid;
+      place-items: center;
+    }
+
+    .wrapper {
+      height: 300px;
+      width: 400px;
+      position: relative;
+      overflow: hidden;
+
+      * {
+        position: absolute;
+        background: radial-gradient(1q, #CF6939 16q, #F8B140 0 45px, #2F434E 0 79q, #CF6939 0 111q, #F8B140);
+      }
+    }
+
+    .parent {
+      height: 100%;
+      width: 100%
+    }
+
+    p {
+      margin: 20px -150px 0 240px;
+      width: 80px;
+      height: 220px;
+      border: 22q solid#F8B140;
+      -webkit-box-reflect: left 80px
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="parent">
+      <p></p>
+    </div>
+  </div>
+</body>
+
+</html>
