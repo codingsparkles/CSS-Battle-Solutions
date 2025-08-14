@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS Battle Daily Target Solution - August 07, 2025</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(#F88889, #fff);
+            display: grid;
+            place-items: center;
+        }
+
+        .wrapper {
+            height: 300px;
+            width: 400px;
+            background: #fff;
+            position: relative;
+
+            * {
+                position: absolute;
+            }
+        }
+
+        p {
+            --b: #F88889;
+            background: radial-gradient(1Q at 94.3%74Q, #F88889 20px, #fff 0 37Q, var(--b));
+            padding: 70px 95px;
+            -webkit-box-reflect: right 20px;
+        }
+
+        p+p {
+            top: 160px
+        }
+
+        [a],
+        [b] {
+            --b: #0000;
+            left: -210px
+        }
+
+        [b] {
+            left: 210px;
+            top: 0
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p>
+        </p>
+        <p>
+        </p>
+        <p a>
+        </p>
+        <p b>
+        </p>
+    </div>
+</body>
+
+</html>
