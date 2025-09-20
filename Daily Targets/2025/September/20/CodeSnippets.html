@@ -1,0 +1,63 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #492FB0;
+
+        * {
+            padding: 75 50;
+            background: linear-gradient(#DB5EAD, #DB5EAD)50%/53q 100%no-repeat, radial-gradient(1q, #DB5EAD 53q, #492FB0);
+            margin: 75 20 75;
+            position: fixed;
+
+            p {
+                margin: -75 80;
+                rotate: 15deg;
+
+                +p {
+                    left: 200;
+                    rotate: 30deg
+                }
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #492FB0;
+
+        * {
+            background: #DB5EAD;
+            color: DB5EAD
+        }
+
+        body {
+            margin: 25%150;
+            border-radius: 2in;
+            box-shadow: 130px 0, -130px 0
+        }
+
+        p {
+            padding: 75 25;
+            margin: -25-105;
+            position: fixed;
+
+            +p {
+                left: 280;
+                rotate: 15deg;
+
+                +p {
+                    left: 410;
+                    rotate: 30deg
+                }
+            }
+        }
+    }
+</style>

@@ -1,0 +1,26 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #3A335A;
+
+        * {
+            background: repeating-linear-gradient(#fff 0 32q, #3A335A 0 74q);
+            margin: 65 130;
+
+            p {
+                padding: 85 70;
+                position: fixed;
+                rotate: 15deg;
+                margin: 0-170;
+
+                +p {
+                    rotate: -15deg;
+                    left: 470
+                }
+            }
+        }
+    }
+</style>
