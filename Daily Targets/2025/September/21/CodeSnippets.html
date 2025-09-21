@@ -1,0 +1,72 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p>
+<p><a></a></p>
+</p>
+<style>
+    * {
+        background: #30383F;
+
+        * {
+            background: #fff;
+            border-radius: 1in
+        }
+
+        body {
+            margin: 100 150;
+            border: 20px solid#5AA4B7;
+
+            * {
+                position: fixed;
+                padding: 18 70;
+                margin: 12-40;
+
+                +p {
+                    background: #0000;
+                    padding: 50;
+                    margin: -20 -20;
+                    box-shadow: 100px 0#5AA4B7, -100px 0#5AA4B7
+                }
+
+                a {
+                    margin: -18-222;
+                    box-shadow: 304px 0#fff
+                }
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #fff;
+        margin: 30%170;
+        color: 5AA4B7;
+        --b: 0 0 0 21q, 0 0 0 2in#30383F;
+        box-shadow: var(--b);
+        border-radius: 1in;
+
+        * {
+            --b: 0 0;
+            margin: 12-40;
+
+            p {
+                position: fixed;
+                padding: 50;
+                margin: -32 20;
+                background: #0000;
+                --b: 106q 0, -106q 0;
+
+                +p {
+                    padding: 18 70;
+                    margin: 0;
+                    --b: 161q 0#fff, -161q 0#fff
+                }
+            }
+        }
+    }
+</style>
