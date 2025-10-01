@@ -1,0 +1,32 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        --b: #F9FAFD;
+        background: var(--b);
+
+        * {
+            --b: #A7C2FA;
+            border-radius: 1in
+        }
+
+        body {
+            margin: 70 120;
+            clip-path: circle(50% at 50%50%);
+
+            * {
+                --b: #4F73D9;
+                padding: 30;
+                margin: 20 50;
+                position: fixed;
+
+                +p {
+                    padding: 50 60;
+                    margin: 93 20
+                }
+            }
+        }
+    }
+</style>
