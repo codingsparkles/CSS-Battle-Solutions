@@ -1,0 +1,41 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<div><a></a><a></a></div>
+<style>
+    body {
+        background: #8CFADC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100%;
+
+        p,
+        a {
+            background: #1A4341;
+            rotate: 45deg
+        }
+
+        p {
+            padding: 25;
+            margin-top: 0
+        }
+
+        div {
+            display: flex
+        }
+
+        a {
+            --a: 6px;
+            padding: 30 60;
+            border-radius: 0 0 1in 1in;
+            transform: translateX(var(--a)) translateY(-22px)
+        }
+
+        a+a {
+            rotate: -45deg;
+            --a: -6px
+        }
+    }
+</style>
