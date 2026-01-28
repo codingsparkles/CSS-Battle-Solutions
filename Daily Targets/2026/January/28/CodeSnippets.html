@@ -1,0 +1,48 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<style>
+    * * {
+        background: #B6EBE7;
+        border: solid;
+        color: #5E2BB7;
+        border-width: 0 30;
+        margin: 180 10 0;
+
+        * {
+            position: fixed;
+            padding: 10 20;
+            border-radius: 0 0 1in 1in;
+            margin: 0 40;
+            border-width: 0 30 30;
+            --a: 42q;
+            -webkit-box-reflect: right var(--a);
+
+            +p {
+                scale: -1;
+                color: #9382E4;
+                margin: -50 250;
+                --a: 191q
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<style>
+    * {
+        --a: 50%37.5%;
+        --b: #9382E4;
+        --c: -85q/280px;
+        background: radial-gradient(1q at var(--a), #B6EBE7 5vw, var(--b)0 53q, #B6EBE7)var(--c);
+
+        * {
+            border-inline: 32q solid#5E2BB7;
+            margin: 45%10 0;
+            --a: 50%0%;
+            --b: #5E2BB7;
+            --c: 5vw/148q
+        }
+    }
+</style>
