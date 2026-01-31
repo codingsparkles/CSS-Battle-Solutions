@@ -1,0 +1,72 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p></p>
+<p></p>
+<style>
+    * {
+        background: #555FD9;
+
+        * {
+            background: #0000
+        }
+
+        +*:not(p) {
+            border: 5vw solid#555FD9;
+            margin: 50 100;
+
+            p {
+                position: fixed;
+                border-block: 106q dotted#EFBB74;
+                padding: 40 80;
+                margin: -60 30;
+                z-index: -1;
+
+                +* {
+                    rotate: 90deg;
+                    margin: -30 0
+                }
+            }
+        }
+    }
+</style>
+
+<!-- Method 2 -->
+<p></p>
+<style>
+    *:not(p) {
+        background: #555FD9;
+        border-block: 106q dotted#EFBB74;
+        margin: 10 150;
+
+        * {
+            margin: -100 0;
+            rotate: 90deg;
+            background: #0000;
+
+            * {
+                border: 5vw solid#555FD9;
+                padding: 80;
+                margin: -60-50;
+                position: fixed
+            }
+        }
+    }
+</style>
+
+<!-- Method 3 -->
+
+<style>
+    & {
+        background: #555FD9;
+        border-radius: 50%;
+        margin: 110 160;
+        box-shadow: 95q 0 0 10px, -95q 0 0 10px, 0 95q 0 10px, 0-95q 0 10px;
+        color: EFBB74;
+
+        * {
+            border: 5vw solid#555FD9;
+            background: #0000;
+            margin: -60
+        }
+    }
+</style>
