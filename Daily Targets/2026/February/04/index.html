@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CSS Battle Daily Target Solution - February 04, 2026</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(#AC778B, #fff);
+            display: grid;
+            place-items: center;
+        }
+
+        .wrapper {
+            height: 300px;
+            width: 400px;
+            background: #AC778B;
+            position: relative;
+            overflow: hidden;
+
+            * {
+                position: absolute;
+                border: 20px solid#fff;
+                background: #AC778B;
+            }
+        }
+
+        p {
+            margin: -20px -20px -20px 190px;
+            height: 300px;
+            width: 190px;
+        }
+
+        a,
+        b {
+            border-radius: 30px;
+            padding: 30px;
+        }
+
+        a {
+            margin: 100px -60px;
+            -webkit-box-reflect: left -100px;
+        }
+
+        b {
+            margin: -130px 150px;
+
+            +b {
+                top: 190px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <p>
+            <a>
+                <b></b>
+                <b></b>
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
