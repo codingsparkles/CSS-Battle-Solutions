@@ -1,0 +1,40 @@
+<!-- Here added closing tags to format the code properly -->
+<!-- Method 1 -->
+<p>
+<p></p><a><a></a></a></p>
+<style>
+    * * {
+        border-block: 30px solid#E25C57
+    }
+
+    body {
+        background: #F4DA64;
+        margin: 120 170;
+
+        * {
+            position: fixed
+        }
+
+        p {
+            padding: 60 10;
+            border-width: 60;
+            margin: -120 20;
+            rotate: 45deg;
+
+            +p {
+                rotate: -45deg
+            }
+        }
+
+        a {
+            border-block-style: dotted;
+            margin: -105 15;
+            padding: 75 10;
+
+            +a {
+                rotate: 90deg;
+                margin: -110 20
+            }
+        }
+    }
+</style>
